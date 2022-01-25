@@ -1,7 +1,8 @@
 var sw_targ=true; var ff_targ=''; var qs= querySt('h'); switch(qs) {
-case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://haringeyfixers.github.io/livesite'; break; // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
-//https://haringeyfixers.github.io/redir/rdhfix.htm				
-case 'f23'	:ff_targ_text='xxxxx'; ff_targ='https://fgmenu.around.gq';break;  // http://bit.ly/xxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
+case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://haringeyfixers.github.io/livesite'; break; 
+                // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
+case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.google.com/document/d/1iYTb5Aeb1qvLJAtviflSwHuY-HHriJ46BaHMtReWpwI/edit?usp=sharing';break;
+                // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
 case 'f24'	:ff_targ_text='xxxxx';  ff_targ='xxxxxxxxxxxxxx';break; 
         // bit.ly/stfgfiles https://haringeyfixers.github.io/redir/rdhfix.htm?h=f24					
 case 'f25'	:ff_targ_text='tttttttttttttt'; ff_targ='done';break; 
