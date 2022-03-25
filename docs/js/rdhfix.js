@@ -1,5 +1,5 @@
 var sw_targ=true; var ff_targ=''; var qs= querySt('h'); switch(qs) {
-case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://haringeyfixers.github.io/livesite'; break; 
+case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://haringeyfixers.github.io/website'; break; 
                 // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
 case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.google.com/spreadsheets/d/11OZA56o4JYmmogmU99Stn6zONsPLjm0coDKgW6B-hQM/edit?usp=sharing';break;
                 // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
