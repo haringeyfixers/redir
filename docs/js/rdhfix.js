@@ -3,7 +3,7 @@ case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.ap
                 // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
 case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.google.com/spreadsheets/d/11OZA56o4JYmmogmU99Stn6zONsPLjm0coDKgW6B-hQM/edit?usp=sharing';break;
                 // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
-case 'f24'	:ff_targ_text='HfixAdmin';  ff_targ='https://docs.google.com/spreadsheets/d/1SjBCvulLLClobskV40G6fzYeC8-j2VHyyj2Ci-1ARq4/edit?usp=sharing';break; 
+case 'f24'	:ff_targ_text='HfixAdmin';  ff_targ='https://docs.google.com/spreadsheets/d/1h9FJ4lULvbrp11awKNT5h5o8kOrzb6a4gWwQtcKCMgk/edit?usp=sharing';break; 
         // bit.ly/hfixadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f24					
 case 'f25'	:ff_targ_text='tttttttttttttt'; ff_targ='done';break; 
         // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f25					
