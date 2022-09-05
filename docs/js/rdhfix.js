@@ -5,8 +5,8 @@ case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.googl
                 // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
 case 'f24'	:ff_targ_text='HfixAdmin';  ff_targ='https://docs.google.com/spreadsheets/d/1PeSyLKmi4tophgGlAk_ibcVGnw87pKLqYq3bexHNx34/edit?usp=sharing';break; 
         // bit.ly/hfixadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f24					
-case 'f25'	:ff_targ_text='tttttttttttttt'; ff_targ='done';break; 
-        // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f25					
+case 'f25'	:ff_targ_text='Hfix booking - Disclaimer'; ff_targ='https://docs.google.com/document/d/1ochtkuOY2jynHUcukQ_zSWigz9MKTeEIGaxWDANaWzE/edit?usp=sharing';break; 
+        // bit.ly/HfixBookDisclaim https://haringeyfixers.github.io/redir/rdhfix.htm?h=f25					
 case 'f26'	:ff_targ='done'; ff_targ_text='tttttttttttttt'; break; 
         // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f26					
 case 'f27'	:ff_targ_text='tttttttttttttttttt'; ff_targ='done'; break; 
