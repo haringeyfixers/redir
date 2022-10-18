@@ -15,27 +15,27 @@ case 'qa28'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.a
         // bit.ly/3EPEfy4               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa28					
 case 'qa29'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa29'; break; 
         // bit.ly/3yNR0p2               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa29					
-case 'qb30'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa30'; break;  
+case 'qb30'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb30'; break;  
         // bit.ly/3D8c9gk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb30					
-case 'qb31'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa31'; break;  
+case 'qb31'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb31'; break;  
         // bit.ly/3TkYJTk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb31					
-case 'qb32'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa32'; break; 	
+case 'qb32'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb32'; break; 	
         break; // bit.ly/3MCGmXP        https://haringeyfixers.github.io/redir/rdhfqr.htm?t=qb32					
-case 'qb33'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa33'; break; 
+case 'qb33'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb33'; break; 
         break; // bit.ly/xxxxxx         https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb33					
-case 'qb34'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa34'; break;  
+case 'qb34'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb34'; break;  
         // bit.ly/stm34                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb34					
-case 'qb35'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa35'; break; 
+case 'qb35'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb35'; break; 
         // bit.ly/stm35                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb35					
-case 'qb36'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa36'; break; 
+case 'qb36'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb36'; break; 
         // bit.ly/stm36                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb36					
-case 'qb37'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa37'; break; 
+case 'qb37'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb37'; break; 
         // bit.ly/stm37                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb37					
-case 'qb38'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa38'; break; 
+case 'qb38'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb38'; break; 
         // bit.ly/stm38                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb38					
-case 'qb39'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa39'; break; 
+case 'qb39'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb39'; break; 
         // bit.ly/stm39                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb39					
-case 'qb40':ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa40'; break; 
+case 'qb40'     :ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb40'; break; 
         // bit.ly/stm40                 https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb40									
 
 default:sw_targ=false;break;
