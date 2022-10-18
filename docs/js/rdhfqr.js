@@ -20,7 +20,7 @@ case 'qb30'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.a
 case 'qb31'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb31'; break;  
         // bit.ly/3TkYJTk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb31					
 case 'qb32'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb32'; break; 	
-       // bit.ly/3MCGmXP                https://haringeyfixers.github.io/redir/rdhfqr.htm?t=qb32					
+       // bit.ly/3MCGmXP                https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb32					
 case 'qb33'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb33'; break; 
         // bit.ly/3yPIw0K               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb33					
 case 'qb34'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb34'; break;  
