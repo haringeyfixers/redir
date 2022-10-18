@@ -1,5 +1,5 @@
-var sw_targ=true; var ff_targ=''; var qs= querySt('r'); var qz= querySt('z'); switch(qs) {
-case '122'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?r122&z='+qz; break; 
+var sw_targ=true; var ff_targ=''; var qs= querySt('r'); switch(qs) {
+case '122'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?r122'; break; 
         // bit.ly/rdhf1?r=122&z=	
 case '123'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?r123'; break; 
         // bit.ly/XXXXXXX 3MFXuf9               https://haringeyfixers.github.io/redir/rdhf1.htm?r=123
