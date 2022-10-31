@@ -6,17 +6,17 @@ case 'qa23'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.a
 case 'qa24'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa24'; break;  
         // bit.ly/3EXW5yG               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa24					
 case 'qa25'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa25'; break; 
-        // bit.ly/3ETv2Vk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa25					
-case 'qa26'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa26'; break;  
-        // bit.ly/3EM8mq9               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa26					
+        // bit.ly/3ETv2Vk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa25 A4 Fusion
+case 'qa26'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa26'; break; 
+        // bit.ly/3EM8mq9               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa26 A4 kenley
 case 'qa27'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa27'; break; 
-        // bit.ly/3VCLJtY               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa27					
+        // bit.ly/3VCLJtY               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa27 A4 Lympne Outside 				
 case 'qa28'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa28'; break; 
-        // bit.ly/3EPEfy4               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa28					
+        // bit.ly/3EPEfy4               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa28 A4 Lympne inside			
 case 'qa29'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qa29'; break; 
-        // bit.ly/3yNR0p2               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa29					
+        // bit.ly/3yNR0p2               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qa29 A4 Hornchurch				
 case 'qb30'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb30'; break;  
-        // bit.ly/3D8c9gk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb30					
+        // bit.ly/3D8c9gk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb30 A4 Debden				
 case 'qb31'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb31'; break;  
         // bit.ly/3TkYJTk               https://haringeyfixers.github.io/redir/rdhfqr.htm?h=qb31					
 case 'qb32'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?qb32'; break; 	
