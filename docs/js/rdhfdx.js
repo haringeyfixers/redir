@@ -1,4 +1,4 @@
-var sw_targ=true, ff_targ='', qs= querySt('x'), szx=qs.substring(1);
+var sw_targ=true, ff_targ='', ff_targ_text='Haringey Fixers', qs= querySt('x'), szx=qs.substring(1);
 if (szx.length > 0) {ff_targ='https://hfixers.netlify.app?x='+szx;} else {sw_targ=false;}
 // catchall redir https://haringeyfixers.github.io/redir/rdhfdx.htm?x=100	
 if (sw_targ==true) {document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');			
