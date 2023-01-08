@@ -11,8 +11,8 @@ case 'f26'	:ff_targ='https://docs.google.com/document/d/1eG0dSxRZs4BNA-SKhmCuvdO
         // bit.ly/hfgen22 https://haringeyfixers.github.io/redir/rdhfix.htm?h=f26					
 case 'f27'	:ff_targ_text='Slides'; ff_targ='https://docs.google.com/presentation/d/1nOMg93X5ced6YsSRDayycATI_Tef_GyDWC1pLwgjqxs/edit?usp=sharing'; break; 
         // bit.ly/hfslides22 HFSLIDES22 https://haringeyfixers.github.io/redir/rdhfix.htm?h=f27					
-case 'f28'	:ff_targ_text='tttttttttttttttttt'; ff_targ='bbbbb'; break; 
-        // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f28					
+case 'f28'	:ff_targ_text='HF Repairs - admin version'; ff_targ='https://docs.google.com/spreadsheets/d/1PwuQQ4OgJdAF7GeqQhHw6dGodSOXWzTDVBGNK5gGU5Y/edit?usp=sharing'; break; 
+        // bit.ly/hfrepadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f28					
 case 'f29'	:ff_targ_text='tttttttttttttttttt'; ff_targ='bbbbb';break; 
         // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f29					
 case 'h30'	:ff_targ_text='tttttttttttttttttt'; ff_targ=''; break; 
