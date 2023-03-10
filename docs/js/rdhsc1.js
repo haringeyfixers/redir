@@ -1,7 +1,7 @@
 var sw_targ=true; var ff_targ=''; var qs= querySt('r'); switch(qs) {
 case '122'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?r122'; break; 
         // bit.ly/rdhsc1?r=122&z=	
-case '123'	:ff_targ_text='Haringey Fixers';  ff_targ='https://hfixers.netlify.app?r123'; break; 
+case '123'	:ff_targ_text='BWF Social Cinema';  ff_targ='https://www.eventbrite.co.uk/e/539233310347/'; break; 
         // bit.ly/bwfs3 3FfHezg               https://haringeyfixers.github.io/redir/rdhsc1.htm?r=123
 
 default:sw_targ=false;break;
