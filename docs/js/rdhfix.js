@@ -13,8 +13,8 @@ case 'f27'	:ff_targ_text='Slides'; ff_targ='https://docs.google.com/presentation
         // bit.ly/hfslides22 HFSLIDES22 https://haringeyfixers.github.io/redir/rdhfix.htm?h=f27					
 case 'f28'	:ff_targ_text='HF Repairs - admin version'; ff_targ='https://docs.google.com/spreadsheets/d/1PwuQQ4OgJdAF7GeqQhHw6dGodSOXWzTDVBGNK5gGU5Y/edit?usp=sharing'; break; 
         // bit.ly/hfrepadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f28					
-case 'f29'	:ff_targ_text='tttttttttttttttttt'; ff_targ='bbbbb';break; 
-        // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=f29					
+case 'f29'	:ff_targ_text='HF Repairs - BWF School'; ff_targ='https://docs.google.com/spreadsheets/d/1sLa1sdvHdXgUjEAHrcX12u5wZPF-KvAx9YryL1rUHfA/edit?usp=sharing';break; 
+        // bit.ly/hf-sch HF-SCH https://haringeyfixers.github.io/redir/rdhfix.htm?h=f29					
 case 'h30'	:ff_targ_text='tttttttttttttttttt'; ff_targ=''; break; 
         // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=h30					
 case 'h31'	:ff_targ_text='tttttttttttttttttt'; ff_targ='';break; 
