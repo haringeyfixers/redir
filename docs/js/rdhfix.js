@@ -17,8 +17,8 @@ case 'f29'	:ff_targ_text='HF Repairs - BWF School'; ff_targ='https://docs.google
         // bit.ly/hf-sch HF-SCH https://haringeyfixers.github.io/redir/rdhfix.htm?h=f29					
 case 'h30'	:ff_targ_text='HF Volunteers Wiki'; ff_targ='https://docs.google.com/document/d/1C5YoX_GfMBgPAlVkGfRktU16ZMy9okji_iODkVs5W3c/edit?usp=sharing'; break; 
         // bit.ly/hfvolwiki https://haringeyfixers.github.io/redir/rdhfix.htm?h=h30					
-case 'h31'	:ff_targ_text='tttttttttttttttttt'; ff_targ='';break; 
-        // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?h=h31					
+case 'h31'	:ff_targ_text='HF Volunteers Acceptance Form'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSeiU1Hrpm42RFOJU5LYoTyqWdTpidsWQuN_jC5EiBNwK3UgLg/viewform?usp=sharing';break; 
+        // bit.ly/hfvolwikiform https://haringeyfixers.github.io/redir/rdhfix.htm?h=h31					
 case 'h32'	:ff_targ_text='tttttttttttttttttt'; ff_targ='';	
         break; // bit.ly/xxxxxx https://haringeyfixers.github.io/redir/rdhfix.htm?t=he32					
 case 'h33'	:ff_targ_text='tttttttttttttttttt'; ff_targ='';	
