@@ -23,12 +23,12 @@ case 'h32'	:ff_targ_text='HF Repairs - BWF School Admin Version'; ff_targ='https
         // bit.ly/hf-sch2 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h32					
 case 'h33'	:ff_targ_text='HF Signup'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSebVEWzrHsuGavUphJTd8xGwwOuooJrxgmB7Kg3eV2qIvuTZw/viewform';	break; 
         // bit.ly/hf23help goes straight there! https://haringeyfixers.github.io/redir/rdhfix.htm?h=h33					
-case 'h34'	:ff_targ_text='HF Membership Form'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSebVEWzrHsuGavUphJTd8xGwwOuooJrxgmB7Kg3eV2qIvuTZw/viewform'; break; 
+case 'h34'	:ff_targ_text='Haringey Fixers signup A'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSebVEWzrHsuGavUphJTd8xGwwOuooJrxgmB7Kg3eV2qIvuTZw/viewform'; break; 
         // bit.ly/hf2reg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h34					
-case 'h35'	:ff_targ_text='Haringey Fixers signup'; ff_targ='https://forms.gle/xzMfKc9EhHV2ph7A7';	break; 
+case 'h35'	:ff_targ_text='Haringey Fixers signup C'; ff_targ='https://forms.gle/xzMfKc9EhHV2ph7A7';	break; 
         // bit.ly/hfscreg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h35	member signup from social cinema pages				
-case 'h36'	:ff_targ_text='tttttttttttttttttt'; ff_targ='';	break; 
-        // bit.ly/stm36 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h36					
+case 'h36'	:ff_targ_text='Haringey Fixers signup N'; ff_targ='https://forms.gle/QgP49gjNT4o1xY9s8';	break; 
+        // bit.ly/hfnreg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h36					
 case 'h37'	:ff_targ_text='tttttttttttttttttt'; ff_targ='  '; break; 
         // bit.ly/stm37 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
 case 'h38'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
