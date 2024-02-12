@@ -7,7 +7,7 @@ case '124'	:ff_targ_text='HF Recruitment & Selection Privacy Notice';  ff_targ='
         // https://bit.ly/hfpolrspn                https://haringeyfixers.github.io/redir/rdhsc1.htm?r=124
 case '125'	:ff_targ_text='Work With Us';  ff_targ='https://haringeyfixers.org/about-us/work-with-us/'; break; 
         // https://bit.ly/hfworkwith                https://haringeyfixers.github.io/redir/rdhsc1.htm?r=125     
-case '126'	:ff_targ_text='Google Meet 2024';  ff_targ='https://tel.meet/una-attb-nao?pin=8091840196575'; break; 
+case '126'	:ff_targ_text='Google Meet 2024';  ff_targ='https://meet.google.com/una-attb-nao'; break; 
         // https://bit.ly/hfgmeet                https://haringeyfixers.github.io/redir/rdhsc1.htm?r=126    
 case '127'	:ff_targ_text='xxxx';  ff_targ='xxxxxxxxxx'; break; 
         // https://bit.ly/xxxx                https://haringeyfixers.github.io/redir/rdhsc1.htm?r=127  
