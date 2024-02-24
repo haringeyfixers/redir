@@ -24,7 +24,7 @@ let urlParams = {};
 var sw_targ=true; let ff_targ='', qs= urlParams["r"]; 
 
 switch(qs) {
-  case 'rcag'	: let vqs= urlParams["v"]; console.log("urlp vqs="+vqs);
+  case 'rcag'	: let vqs= urlParams["v"]; console.log("urlp2 vqs="+vqs);
     /* placeholders so each different bit.ly accumulates stats  
     https://bit.ly/hfag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=22 
     https://bit.ly/hfag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=23 
