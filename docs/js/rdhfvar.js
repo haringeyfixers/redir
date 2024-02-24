@@ -1,6 +1,29 @@
-var sw_targ=true; let ff_targ='', qs= querySt('r'); 
-let vqs= querySt('v'); 
-console.log("vqs="+vqs);
+let urlParams = {};
+(window.onpopstate = function () {
+    let match,
+        pl = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) {
+            return decodeURIComponent(s.replace(pl, " "));
+        },
+        query = window.location.search.substring(1);
+
+    while (match = search.exec(query)) {
+        if (decode(match[1]) in urlParams) {
+            if (!Array.isArray(urlParams[decode(match[1])])) {
+                urlParams[decode(match[1])] = [urlParams[decode(match[1])]];
+            }
+            urlParams[decode(match[1])].push(decode(match[2]));
+        } else {
+            urlParams[decode(match[1])] = decode(match[2]);
+        }
+    }
+})();
+
+
+var sw_targ=true; let ff_targ='', qs= urlParams["r"]; 
+let vqs= urlParams["r"]; 
+console.log("urlp vqs="+vqs);
 switch(qs) {
   case 'rcag'	: 
     /* placeholders so each different bit.ly accumulates stats  
