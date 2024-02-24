@@ -1,27 +1,18 @@
 let urlParams = {};
-(window.onpopstate = function () {
-    let match,
-        pl = /\+/g,  // Regex for replacing addition symbol with a space
+(window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
-        decode = function (s) {
-            return decodeURIComponent(s.replace(pl, " "));
-        },
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
         query = window.location.search.substring(1);
 
     while (match = search.exec(query)) {
         if (decode(match[1]) in urlParams) {
-            if (!Array.isArray(urlParams[decode(match[1])])) {
-                urlParams[decode(match[1])] = [urlParams[decode(match[1])]];
-            }
+            if (!Array.isArray(urlParams[decode(match[1])])) { urlParams[decode(match[1])] = [urlParams[decode(match[1])]]; }
             urlParams[decode(match[1])].push(decode(match[2]));
-        } else {
-            urlParams[decode(match[1])] = decode(match[2]);
-        }
+        } else { urlParams[decode(match[1])] = decode(match[2]); }
     }
 })();
 
-
-var sw_targ=true; let ff_targ='', qs= urlParams["r"]; console.log("urlp1 qs="+qs);
+var sw_targ=true; let ff_targ_text, ff_targ='', qs= urlParams["r"]; console.log("urlp1 qs="+qs);
 
 switch(qs) {
   case 'rcag'	: let vqs= urlParams["v"]; console.log("urlp2 vqs="+vqs);
@@ -48,5 +39,3 @@ switch(qs) {
 if (sw_targ==true) {document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
                    window.location.href=ff_targ;}
 else {document.write('There may have been an error - no action possible:'+ff_targ);}
-function querySt(Key) {var url = window.location.href; KeysValues = url.split(/[\?&]+/);
-for (i = 0; i < KeysValues.length; i++) {KeyValue = KeysValues[i].split("="); if (KeyValue[0] == Key) {return KeyValue[1];}}}
