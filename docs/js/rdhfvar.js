@@ -33,7 +33,20 @@ switch(qs) {
     https://bit.ly/hfrcag35 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag35 
     https://bit.ly/hfrcag36 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag36 
     https://bit.ly/hfrcag37 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag37 
-    https://bit.ly/hfrcag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag38 */    
+    https://bit.ly/hfrcag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag38
+    // QR CODES on posters
+    https://bit.ly/hfrcag39 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag39
+    https://bit.ly/hfrcag42 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag42
+    https://bit.ly/hfrcag43 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag43
+    https://bit.ly/hfrcag44 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag44
+    https://bit.ly/hfrcag45 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag45
+    https://bit.ly/hfrcag46 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag46
+    https://bit.ly/hfrcag47 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag47
+    https://bit.ly/hfrcag48 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag48
+    https://bit.ly/hfrcag49 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag49
+    https://bit.ly/hfrcag52 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag52
+    
+    */    
     ff_targ_text='All Good Repair Café', ff_targ='https://www.eventbrite.com/cc/haringey-all-good-repair-cafes-turnpike-lane-3116259';
     break;
   default:sw_targ=false;break;
