@@ -16,22 +16,22 @@ var sw_targ=true; let ff_targ_text, ff_targ='', qs= urlParams["r"]; console.log(
 
 switch(qs) {
   case 'rcag'	: let vqs= urlParams["v"]; console.log("urlp2 vqs="+vqs);
-    /* placeholders so each different bit.ly accumulates stats  
-    https://bit.ly/hfag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=22 
-    https://bit.ly/hfag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=23 
-    https://bit.ly/hfag24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=24 
-    https://bit.ly/hfag25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=25 
-    https://bit.ly/hfag26 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=26 
-    https://bit.ly/hfag27 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=27 
-    https://bit.ly/hfag28 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=28 
-    https://bit.ly/hfag29 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=29 
-    https://bit.ly/hfag32 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=32 
-    https://bit.ly/hfag33 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=33 
-    https://bit.ly/hfag34 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=34 
-    https://bit.ly/hfag35 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=35 
-    https://bit.ly/hfag36 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=36 
-    https://bit.ly/hfag37 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=37 
-    https://bit.ly/hfag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=38 */    
+    /* placeholders so each different bit.ly accumulates stats  All Good Repair Café
+    https://bit.ly/hfrcag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag22 
+    https://bit.ly/hfrcag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag23 
+    https://bit.ly/hfrcag24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag24 
+    https://bit.ly/hfrcag25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag25 
+    https://bit.ly/hfrcag26 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag26 
+    https://bit.ly/hfrcag27 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag27 
+    https://bit.ly/hfrcag28 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag28 
+    https://bit.ly/hfrcag29 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag29 
+    https://bit.ly/hfrcag32 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag32 
+    https://bit.ly/hfrcag33 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag33 
+    https://bit.ly/hfrcag34 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag34 
+    https://bit.ly/hfrcag35 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag35 
+    https://bit.ly/hfrcag36 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag36 
+    https://bit.ly/hfrcag37 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag37 
+    https://bit.ly/hfrcag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=hfrcag38 */    
     let ff_targ_text='All Good Repair Café', ff_targ='https://www.eventbrite.com/cc/haringey-all-good-repair-cafes-turnpike-lane-3116259';
     break;
   default:sw_targ=false;break;
