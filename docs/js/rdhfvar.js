@@ -21,7 +21,7 @@ let urlParams = {};
 })();
 
 
-var sw_targ=true; let ff_targ='', qs= urlParams["r"]; 
+var sw_targ=true; let ff_targ='', qs= urlParams["r"]; console.log("urlp1 qs="+qs);
 
 switch(qs) {
   case 'rcag'	: let vqs= urlParams["v"]; console.log("urlp2 vqs="+vqs);
