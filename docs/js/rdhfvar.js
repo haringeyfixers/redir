@@ -1,6 +1,8 @@
 var sw_targ=true; let ff_targ='', qs= querySt('r'); 
+let vqs= querySt('v'); 
+console.log("vqs="+vqs);
 switch(qs) {
-  case 'rcag'	: let vqs= querySt('v'); console.log("vqs="+vqs);
+  case 'rcag'	: 
     /* placeholders so each different bit.ly accumulates stats  
     https://bit.ly/hfag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=22 
     https://bit.ly/hfag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag#v=23 
