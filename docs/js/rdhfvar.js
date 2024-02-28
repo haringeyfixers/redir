@@ -15,9 +15,9 @@ let urlParams = {};
 let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams["r"]; 
 
 switch(qs) {
-  case 'hfrcag'	: let vqs= urlParams["v"];
+  case 'rcag'	: let vqs= urlParams["v"];
                   switch(vqs) {
-                         case 'hfrcag22'	: break; https://bit.ly/hfrcag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag22 
+                         case 'hfrcag22'	: break; // https://bit.ly/hfrcag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag22 
                   }
     /* placeholders so each different bit.ly accumulates stats  All Good Repair Café
     https://bit.ly/hfrcag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag23 
