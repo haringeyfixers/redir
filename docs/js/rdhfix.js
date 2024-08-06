@@ -1,4 +1,19 @@
-var sw_targ=true; var ff_targ=''; var qs= querySt('h'); switch(qs) {
+let urlParams = {};
+(window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
+        query = window.location.search.substring(1);
+
+    while (match = search.exec(query)) {
+        if (decode(match[1]) in urlParams) {
+            if (!Array.isArray(urlParams[decode(match[1])])) { urlParams[decode(match[1])] = [urlParams[decode(match[1])]]; }
+            urlParams[decode(match[1])].push(decode(match[2]));
+        } else { urlParams[decode(match[1])] = decode(match[2]); }
+    }
+})();
+let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams["r"]; 
+
+switch(qs) {
 case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://HaringeyFixers.org'; break; 
                 // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
 case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.google.com/spreadsheets/d/1LaCUWUF886CihC-RcnagpLZMLllJtATr6qsTUHKg3Ss/edit?usp=sharing';break;
@@ -29,19 +44,18 @@ case 'h35'	:ff_targ_text='Haringey Fixers signup C'; ff_targ='https://forms.gle/
         // bit.ly/hfscreg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h35	member signup from social cinema pages				
 case 'h36'	:ff_targ_text='Haringey Fixers signup N'; ff_targ='https://forms.gle/QgP49gjNT4o1xY9s8';	break; 
         // bit.ly/hfnreg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h36					
-case 'h37'	:ff_targ_text='tttttttttttttttttt'; ff_targ='  '; break; 
-        // bit.ly/stm37 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
+case 'h37'	:ff_targ_text='Haringey Fixers Free SIM card request form'; ff_targ='https://forms.gle/sN6jXojkmxMvDhYVA'; break; 
+        // https://bit.ly/hfsimcard https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
 case 'h38'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
-        // bit.ly/stm38 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
+        // https://bit.ly/stm38 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
 case 'h39'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
-        // bit.ly/stm39 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
+        // https://bit.ly/stm39 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
 case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
-        // bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
+        // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
 
 default:sw_targ=false;break;
 }
-if (sw_targ==true) {document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
-                   window.location.href=ff_targ;}
+if (sw_targ==true) {// document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
+                   window.location.href=ff_targ;
+                   }
 else {document.write('There may have been an error - no action possible:'+ff_targ);}
-function querySt(Key) {var url = window.location.href; KeysValues = url.split(/[\?&]+/);
-for (i = 0; i < KeysValues.length; i++) {KeyValue = KeysValues[i].split("="); if (KeyValue[0] == Key) {return KeyValue[1];}}}
