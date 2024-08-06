@@ -46,8 +46,8 @@ case 'h36'	:ff_targ_text='Haringey Fixers signup N'; ff_targ='https://forms.gle/
         // bit.ly/hfnreg https://haringeyfixers.github.io/redir/rdhfix.htm?h=h36					
 case 'h37'	:ff_targ_text='Haringey Fixers Free SIM card request form'; ff_targ='https://forms.gle/sN6jXojkmxMvDhYVA'; break; 
         // https://bit.ly/hfsimcard https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
-case 'h38'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
-        // https://bit.ly/stm38 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
+case 'h38'	:ff_targ_text='Haringey Fixers Media release form'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdZ4rPdD32ZXROGW90ltlrqV9cN7BQZUNdn0pAQlQ0pV1Tkdg/viewform?usp=sf_link';	break; 
+        // https://bit.ly/hfrel24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
 case 'h39'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
         // https://bit.ly/stm39 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
 case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
