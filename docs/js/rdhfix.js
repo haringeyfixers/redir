@@ -1,4 +1,4 @@
-let urlParams = {};
+let urlParams = {}, hfsw="h";
 (window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
         decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
@@ -11,7 +11,7 @@ let urlParams = {};
         } else { urlParams[decode(match[1])] = decode(match[2]); }
     }
 })();
-let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams["r"]; 
+let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams[hfsw]; 
 
 switch(qs) {
 case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://HaringeyFixers.org'; break; 
