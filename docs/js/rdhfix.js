@@ -52,6 +52,30 @@ case 'h39'	:ff_targ_text='Hairngey Fixers MArcomms email archive'; ff_targ='http
         // https://bit.ly/4dyoyte https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
 case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
         // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
+case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40	
+case 'h41'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40	
+case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm41 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h41	
+case 'h42'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm42 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42	
+case 'h43'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm43 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h43	
+case 'h44'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm44 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h44	
+case 'h45'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm45 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h45	
+case 'h46'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm46 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h46	
+case 'h47'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm47 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h47	
+case 'h48'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm48 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h48	
+case 'h49'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm49 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h49	
+
+
 
 default:sw_targ=false;break;
 }
