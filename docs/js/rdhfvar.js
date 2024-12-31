@@ -104,9 +104,9 @@ switch(qs) {
   break; 
  case 'rccrc'	: if (sznogo==true) {console.log("77 rcbw nogo test");}// default sznogo=true; CAMPSBOURNE
                   switch(vqs) {
-                         case 'hf22'	: ff_targ_text='Campsboune Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
+                         case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrc22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
-                         // case 'hf23'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
+                         case 'hf23'	: ff_targ_text='Campsboune Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrc23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf23 
                          // case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrc24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf24 
