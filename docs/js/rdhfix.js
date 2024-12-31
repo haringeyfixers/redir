@@ -48,10 +48,30 @@ case 'h37'	:ff_targ_text='Haringey Fixers Free SIM card request form'; ff_targ='
         // https://bit.ly/hfsimcard https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
 case 'h38'	:ff_targ_text='Haringey Fixers Media release form'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdZ4rPdD32ZXROGW90ltlrqV9cN7BQZUNdn0pAQlQ0pV1Tkdg/viewform?usp=sf_link';	break; 
         // https://bit.ly/hfrel24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
-case 'h39'	:ff_targ_text='Hairngey Fixers MArcomms email archive'; ff_targ='https://us21.campaign-archive.com/home/?u=05a0f46b4c063a0c3a9854909&id=aed3ea484d';	break; 
+case 'h39'	:ff_targ_text='Haringey Fixers MArcomms email archive'; ff_targ='https://us21.campaign-archive.com/home/?u=05a0f46b4c063a0c3a9854909&id=aed3ea484d';	break; 
         // https://bit.ly/4dyoyte https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
-case 'h40'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
-        // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
+case 'h40'	:ff_targ_text='Haringey Fixers Bringers Feedback Survey 24'; ff_targ='https://forms.gle/VH4RABe7jaVkXS857';	break; 
+        // https://bit.ly/hfbf24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
+case 'h41'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm40 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40	
+case 'h42'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm42 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42	
+case 'h43'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm43 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h43	
+case 'h44'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm44 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h44	
+case 'h45'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm45 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h45	
+case 'h46'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm46 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h46	
+case 'h47'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm47 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h47	
+case 'h48'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm48 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h48	
+case 'h49'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
+        // https://bit.ly/stm49 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h49	
+
+
 
 default:sw_targ=false;break;
 }
