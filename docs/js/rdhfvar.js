@@ -11,6 +11,7 @@ let urlParams = {}, hfsw="r", hfsw2="v", sznogo=false; //CHANGE THIS SWTICH PARA
         } else { urlParams[decode(match[1])] = decode(match[2]); }
     }
 })();
+<<<<<<< Updated upstream
 
 let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams[hfsw], vqs= urlParams[hfsw2]; //  ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; 
 
@@ -60,6 +61,30 @@ switch(qs) {
     https://bit.ly/hfrcag36 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf36 
     https://bit.ly/hfrcag37 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf37 
     https://bit.ly/hfrcag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf38
+=======
+let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams["r"]; 
+
+switch(qs) {
+  case 'rcag'	:  ff_targ_text='All Good Repair Café', ff_targ='https://www.eventbrite.com/cc/haringey-all-good-repair-cafes-turnpike-lane-3116259'; let vqs= urlParams["v"];
+                  switch(vqs) {
+                         case 'hfrcag39'	: break; // https://bit.ly/hfrcag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag22 
+                  }
+    /* placeholders so each different bit.ly accumulates stats  All Good Repair Café
+    https://bit.ly/hfrcag23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag23 
+    https://bit.ly/hfrcag24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag24 
+    https://bit.ly/hfrcag25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag25 
+    https://bit.ly/hfrcag26 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag26 
+    https://bit.ly/hfrcag27 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag27 
+    https://bit.ly/hfrcag28 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag28 
+    https://bit.ly/hfrcag29 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag29 
+    https://bit.ly/hfrcag32 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag32 
+    https://bit.ly/hfrcag33 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag33 
+    https://bit.ly/hfrcag34 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag34 
+    https://bit.ly/hfrcag35 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag35 
+    https://bit.ly/hfrcag36 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag36 
+    https://bit.ly/hfrcag37 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag37 
+    https://bit.ly/hfrcag38 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hfrcag38
+>>>>>>> Stashed changes
     // QR CODES on posters
     https://bit.ly/hfrcag39 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf39
     https://bit.ly/hfrcag42 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf42
@@ -72,6 +97,7 @@ switch(qs) {
     https://bit.ly/hfrcag49 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf49
     https://bit.ly/hfrcag52 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf52
     */    
+<<<<<<< Updated upstream
                   default:ff_targ_text='All Good Repair Café', ff_targ='https://www.eventbrite.com/cc/haringey-all-good-repair-cafes-turnpike-lane-3116259'; break;} 
   break; 
   case 'rcbw'	: if (sznogo==true) {console.log("77 rcbw nogo test");}// default sznogo=true;
@@ -109,5 +135,13 @@ switch(qs) {
 }
 if (sw_targ==true) {if (sznogo==true) {console.log("110 no go");} 
                     else {window.location.href=ff_targ;} // document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
+=======
+
+    break;
+    sw_targ=false;break;   default:console.log("51 not found"); 
+}
+if (sw_targ==true) {// document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
+                   window.location.href=ff_targ;
+>>>>>>> Stashed changes
                    }
 else {document.write('There may have been an error - no action possible:'+ff_targ);}
