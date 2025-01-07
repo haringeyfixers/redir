@@ -84,9 +84,9 @@ switch(qs) {
 						 // https://bit.ly/hfrcc22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
                          case 'hf23'	: ff_targ_text='Campsboune Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrcc23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf23 
-                         // case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
+                         case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrcc24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf24 
-                         // case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
+                         case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrcc25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf25 
   
                    default:console.log("90 rcbw not found"); sznogo=true;break;} 
