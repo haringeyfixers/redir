@@ -52,7 +52,7 @@ case 'h39'	:ff_targ_text='Haringey Fixers MArcomms email archive'; ff_targ='http
         // https://bit.ly/4dyoyte https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
 case 'h40'	:ff_targ_text='Haringey Fixers Bringers Feedback Survey 24'; ff_targ='https://forms.gle/VH4RABe7jaVkXS857';	break; 
         // https://bit.ly/hfbf24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
-case 'h41'	:ff_targ_text='Haringey Fixers Annual tasks'; ff_targ='https://';	break; 
+case 'h41'	:ff_targ_text='Haringey Fixers Annual tasks'; ff_targ='https://docs.google.com/spreadsheets/d/1g1c_0WhnwjK9ufFKibrDLYCr0oUwyG7sW01OReBRYkA/edit?gid=1983948080#gid=1983948080&range=A1';	break; 
         // https://bit.ly/hfyearly https://haringeyfixers.github.io/redir/rdhfix.htm?h=h41	
 case 'h42'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
         // https://bit.ly/stm42 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42	
