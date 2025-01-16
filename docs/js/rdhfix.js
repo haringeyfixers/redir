@@ -48,7 +48,7 @@ case 'h37'	:ff_targ_text='Haringey Fixers Free SIM card request form'; ff_targ='
         // https://bit.ly/hfsimcard https://haringeyfixers.github.io/redir/rdhfix.htm?h=h37					
 case 'h38'	:ff_targ_text='Haringey Fixers Media release form'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdZ4rPdD32ZXROGW90ltlrqV9cN7BQZUNdn0pAQlQ0pV1Tkdg/viewform?usp=sf_link';	break; 
         // https://bit.ly/hfrel24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h38					
-case 'h39'	:ff_targ_text='Haringey Fixers MArcomms email archive'; ff_targ='https://us21.campaign-archive.com/home/?u=05a0f46b4c063a0c3a9854909&id=aed3ea484d';	break; 
+case 'h39'	:ff_targ_text='Haringey Fixers Marcomms email archive'; ff_targ='https://us21.campaign-archive.com/home/?u=05a0f46b4c063a0c3a9854909&id=aed3ea484d';	break; 
         // https://bit.ly/4dyoyte https://haringeyfixers.github.io/redir/rdhfix.htm?h=h39					
 case 'h40'	:ff_targ_text='Haringey Fixers Bringers Feedback Survey 24'; ff_targ='https://forms.gle/VH4RABe7jaVkXS857';	break; 
         // https://bit.ly/hfbf24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									

@@ -70,8 +70,8 @@ switch(qs) {
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrcbw22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf22 
-                         // case 'hf23'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
-                         // https://bit.ly/hfrcbw23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf 23 
+                         case 'hf23'	: ff_targ_text='Broadwater Farm Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
+                         // https://bit.ly/hfrcbw23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf23 used on local poster
                          // case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrcbw24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf24 
                          // case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
