@@ -72,10 +72,10 @@ switch(qs) {
 						 // https://bit.ly/hfrcbw22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf22 
                          case 'hf23'	: ff_targ_text='Broadwater Farm Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfrcbw23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf23 used on local poster
-                         // case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
-                         // https://bit.ly/hfrcbw24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf24 
-                         // case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
-						 // https://bit.ly/hfrcbw25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf 25 
+                         case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
+                         // https://bit.ly/hfrcbw24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf24  NOT YET USED
+                         case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
+						 // https://bit.ly/hfrcbw25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf25  NOT YET USED
                    default:console.log("90 rcbw not found"); sznogo=true;break;} 
   break; 
  case 'rccrc'	: if (sznogo==true) {console.log("90 rccrc nogo test");}// default sznogo=true; CAMPSBOURNE
