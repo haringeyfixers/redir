@@ -101,7 +101,7 @@ switch(qs) {
 
   case 'rclh'	: if (sznogo==true) {console.log("104 rclh nogo test");}// default sznogo=true;
                   switch(vqs) {
-                         case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
+                         case 'hf22'	: ff_targ_text='Jobsheet', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrclh22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
                          // case 'hf23'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrclh23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf23 
@@ -115,7 +115,7 @@ switch(qs) {
   case 'rcmh'	: if (sznogo==true) {console.log("115 rclhmh nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://docs.google.com/spreadsheets/d/1xYG9nd38ZbXpbVOnYhM6GsOSwme_vNNF98q5wQ4YXH0/edit?gid=541010361#gid=541010361&rc=mh'; break;
-						 // to be done https://bit.ly/hfrclh22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
+						 // to be done!!!!!!!!!!!!!!! https://bit.ly/hfrclh22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
                          // case 'hf23'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrclh23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf23 
                          // case 'hf24'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
