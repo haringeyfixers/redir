@@ -85,7 +85,7 @@ switch(qs) {
 						 // https://bit.ly/hfrcbw25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf25  NOT YET USED
                    default:console.log("86 rcbw not found"); sznogo=true;break;} 
   break; 
- case 'rccrc'	: if (sznogo==true) {console.log("88 rccrc nogo test");}// default sznogo=true; CAMPSBOURNE
+  case 'rccrc'	: if (sznogo==true) {console.log("88 rccrc nogo test");}// default sznogo=true; CAMPSBOURNE
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrcc22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
@@ -98,7 +98,6 @@ switch(qs) {
   
                    default:console.log("99 rcbw not found"); sznogo=true;break;} 
   break; 
-
   case 'rclh'	: if (sznogo==true) {console.log("102 rclh nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Jobsheet', ff_targ='https://square.link/u/1Ab8X7S0'; break;
@@ -123,7 +122,7 @@ switch(qs) {
 						 // https://bit.ly/hfrclh25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf25 
                    default:console.log("106 rclh not found"); sznogo=true;break;} 
   break;   
-  default:console.log("126 rc not found"); sznogo=true;break;
+  default:console.log("125 rc not found"); sznogo=true;break;
 }
 if (sw_targ==true) {if (sznogo==true) {console.log("163 no go");} // test http://127.0.0.1:8083/rdhfvar.htm?r=rccrc&v=hf22
                     else {window.location.href=ff_targ;} // document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
