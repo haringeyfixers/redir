@@ -41,9 +41,9 @@ switch(qs) {
                          // case 'hf28'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
                          // https://bit.ly/hfgen28 41UYZzO https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf28 
 
-                  default:console.log("31 hfgen not found"); sznogo=true;break;} 
+                  default:console.log("44 hfgen not found"); sznogo=true;break;} 
   break; 
-  case 'rcag'	: if (sznogo==true) {console.log("48 rcag nogo test");}// default sznogo=true; ALL GOOD
+  case 'rcag'	: if (sznogo==true) {console.log("46 rcag nogo test");}// default sznogo=true; ALL GOOD
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break; 
                          // https://bit.ly/hfrcag22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcag&v=hf22 
@@ -83,9 +83,9 @@ switch(qs) {
                          // https://bit.ly/hfrcbw24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf24  NOT YET USED
                          case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrcbw25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf25  NOT YET USED
-                   default:console.log("90 rcbw not found"); sznogo=true;break;} 
+                   default:console.log("86 rcbw not found"); sznogo=true;break;} 
   break; 
- case 'rccrc'	: if (sznogo==true) {console.log("90 rccrc nogo test");}// default sznogo=true; CAMPSBOURNE
+ case 'rccrc'	: if (sznogo==true) {console.log("88 rccrc nogo test");}// default sznogo=true; CAMPSBOURNE
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrcc22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
@@ -96,10 +96,10 @@ switch(qs) {
                          case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrcc25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf25 
   
-                   default:console.log("90 rcbw not found"); sznogo=true;break;} 
+                   default:console.log("99 rcbw not found"); sznogo=true;break;} 
   break; 
 
-  case 'rclh'	: if (sznogo==true) {console.log("104 rclh nogo test");}// default sznogo=true;
+  case 'rclh'	: if (sznogo==true) {console.log("102 rclh nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Jobsheet', ff_targ='https://square.link/u/1Ab8X7S0'; break;
 						 // https://bit.ly/hfrclh22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
@@ -109,9 +109,9 @@ switch(qs) {
 						 // https://bit.ly/hf24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf 24 
                          // case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrclh25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf25 
-                   default:console.log("106 rclh not found"); sznogo=true;break;} 
-  break;   default:console.log("107 rc not found"); sznogo=true;break;
-  case 'rcmh'	: if (sznogo==true) {console.log("115 rclhmh nogo test");}// default sznogo=true;
+                   default:console.log("112 rclh not found"); sznogo=true;break;} 
+  break;   
+  case 'rcmh'	: if (sznogo==true) {console.log("114 rclhmh nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://docs.google.com/spreadsheets/d/1xYG9nd38ZbXpbVOnYhM6GsOSwme_vNNF98q5wQ4YXH0/edit?gid=541010361#gid=541010361&rc=mh'; break;
 						 // to be done!!!!!!!!!!!!!!! https://bit.ly/hfrclh22 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rccrc&v=hf22 
@@ -122,7 +122,8 @@ switch(qs) {
                          // case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
 						 // https://bit.ly/hfrclh25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf25 
                    default:console.log("106 rclh not found"); sznogo=true;break;} 
-  break;   default:console.log("107 rc not found"); sznogo=true;break;
+  break;   
+  default:console.log("126 rc not found"); sznogo=true;break;
 }
 if (sw_targ==true) {if (sznogo==true) {console.log("163 no go");} // test http://127.0.0.1:8083/rdhfvar.htm?r=rccrc&v=hf22
                     else {window.location.href=ff_targ;} // document.write('<meta http-equiv="refresh" content="1;url='+ff_targ+'"><title>'+ff_targ_text+'</title>');
