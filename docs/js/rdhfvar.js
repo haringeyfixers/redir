@@ -111,7 +111,6 @@ switch(qs) {
 						 // https://bit.ly/hfrclh25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rclh&v=hf25 
                    default:console.log("106 rclh not found"); sznogo=true;break;} 
   break;   default:console.log("107 rc not found"); sznogo=true;break;
-}
   case 'rcmh'	: if (sznogo==true) {console.log("115 rclhmh nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://docs.google.com/spreadsheets/d/1xYG9nd38ZbXpbVOnYhM6GsOSwme_vNNF98q5wQ4YXH0/edit?gid=541010361#gid=541010361&rc=mh'; break;
