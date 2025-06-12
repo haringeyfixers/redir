@@ -16,7 +16,7 @@ let urlParams = {}, hfsw="r", hfsw2="v", sznogo=false;
 let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams[hfsw], vqs= urlParams[hfsw2]; //  ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0';
 const hf_List_of_forthcoming_events="https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019"; 
 
-switch(qs) {//  https://bit.ly/hfgen24 401jwAp https://bit.ly/hfgen28 41UYZzO
+switch(qs) {//  https://bit.ly/hfgen24 MAYBE   401jwAp https://bit.ly/hfgen28 41UYZzO
   case 'hfgen'	: if (sznogo==true) {console.log("20 hfgen nogo test");}// default http://127.0.0.1:8093/docs/rdhfvar.htm?r=hfgen&v=hf22  GENERIC HF Events
     switch(vqs) {
     case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break; 
