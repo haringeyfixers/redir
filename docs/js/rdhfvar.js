@@ -72,6 +72,18 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
 
                   default:ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;} 
   break; 
+    case 'rcbg'	: if (sznogo==true) {console.log("75 rcbg nogo test");}// default sznogo=true; bruce grove
+                  switch(vqs) {
+                         case 'hf22'	: ff_targ_text='Register your interest Bruce Grove', ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSfILNgO7WbaKC5R0L8zS8_DWMOwnxaG2HiDJwl2ccyMreXdqA/viewform?usp=header'; break;
+	// https://bit.ly/regintbg https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbg&v=hf22 
+                         case 'hf23'	: ff_targ_text='Broadwater Farm Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
+	//https://bit.ly/hfrcbw23 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf23 used on local BWF poster
+                         case 'hf24'	: ff_targ_text='Disclaimer - In person 2print out', ff_targ="https://docs.google.com/document/d/13AHxOaMYiw6fI9k3Qh4Pjqbyb3eJaRdmGfS_7RPMsmQ/edit?usp=sharing"; break; 
+	//https://bit.ly/hfrcbw24 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf24  NOT YET USED
+                         case 'hf25'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break;
+						 // https://bit.ly/hfrcbw25 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=rcbw&v=hf25  NOT YET USED
+                   default:console.log("86 rcbw not found"); sznogo=true;break;} 
+  break; 
   case 'rcbw'	: if (sznogo==true) {console.log("77 rcbw nogo test");}// default sznogo=true;
                   switch(vqs) {
                          case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break;
