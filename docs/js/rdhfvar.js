@@ -37,8 +37,8 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
     case 'hf27'	: ff_targ_text='WG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1d3xnC0if3U-fCtlYtFne1Ao6ftYlK6FygtoJf1TXUxo/edit?gid=1162216020#gid=1162216020'; break; 
     // https://bit.ly/wg_Jobsheet https://bit.ly/hfgen27 41XzGgC https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf27 
                         
-    // case 'hf28'	: ff_targ_text='All Good Repair Café', ff_targ=hf_List_of_forthcoming_events; break; 
-    //  https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf28 
+    case 'hf28'	: ff_targ_text='Jewellery Workshop, register interest', ff_targ="https://docs.google.com/forms/d/e/1FAIpQLSez_GqDpkkY8WUeB9z5lgyOc750dSXV_hzZM-zysUwilAfeTQ/viewform?usp=header"; break; 
+    //  https://bit.ly/wg_Jobsheet https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf28 
 
                   default:console.log("44 hfgen not found"); sznogo=true;break;} 
   break; 
