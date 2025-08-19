@@ -15,8 +15,8 @@ case '128'	:ff_targ_text='HF New Volunteer Form';  ff_targ='https://prettyform.a
 // https://bit.ly/hfrc28a             https://haringeyfixers.github.io/redir/rdhsc1.htm?r=128									
 case '129'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=129									
-case '130'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
-// https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=130
+case '130'	:ff_targ_text='HF AGM Year 2 Vote';  ff_targ='https://docs.google.com/forms/d/e/1FAIpQLScNkylh02kZL7u5XHFtt9zA7nEbTEDVOjwOWBoLMgOYM0p4ow/viewform?usp=dialog'; break;								
+// https://bit.ly/hfagm2vote          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=130
 case '131'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=131
 case '132'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
