@@ -19,10 +19,10 @@ case '130'	:ff_targ_text='HF AGM Year 2 Vote';  ff_targ='https://docs.google.com
 // https://bit.ly/hfagm2vote          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=130
 case '131'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=131
-case '132'	:ff_targ_text='HF Live Stream MH';  ff_targ='http://vdo.ninja/?room=hf22'; break;								
+case '132'	:ff_targ_text='HF Live Stream MH';  ff_targ='https://forms.gle/LTPrTt6rJfMQGefP6'; break;								
 // https://bit.ly/hf2mh  http://bit.ly/48xhH3J        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=132
-case '133'	:ff_targ_text='xxxx';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
-// https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=133
+case '133'	:ff_targ_text='xxxx';  ff_targ='http://vdo.ninja/?room=hf22'; break;								
+// https://bit.ly/hfroom22          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=133
 case '134'	:ff_targ_text='xxxxx';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=134
 
