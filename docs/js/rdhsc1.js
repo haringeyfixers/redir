@@ -23,7 +23,7 @@ case '132'	:ff_targ_text='HF Live Stream MH';  ff_targ='https://forms.gle/LTPrTt
 // https://bit.ly/hf2mh  http://bit.ly/48xhH3J        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=132
 case '133'	:ff_targ_text='xxxx';  ff_targ='http://vdo.ninja/?room=hf22'; break;								
 // https://bit.ly/hfroom22          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=133
-case '134'	:ff_targ_text='xxxxx';  ff_targ='https://docs.google.com/document/d/1lJ1vQxCHFlJIIcWtddHkQ_RyGRiO4jJ6jj3J5sVFw_E/edit?usp=sharing'; break;								
+case '134'	:ff_targ_text='HF Repairers - event attendance';  ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdUO6x4Hx2l3MFpInw0-lCioP4FvF007A2e23PVBbKQDXUsuA/viewform?usp=header'; break;								
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=134
 
 									
