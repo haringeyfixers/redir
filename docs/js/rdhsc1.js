@@ -21,11 +21,13 @@ case '131'	:ff_targ_text='HFRC Disclaimer in Person';  ff_targ='https://docs.goo
 // https://bit.ly/hfrc29          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=131
 case '132'	:ff_targ_text='HF Live Stream MH';  ff_targ='https://forms.gle/LTPrTt6rJfMQGefP6'; break;								
 // https://bit.ly/hf2mh  http://bit.ly/48xhH3J        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=132
-case '133'	:ff_targ_text='xxxx';  ff_targ='http://vdo.ninja/?room=hf22'; break;								
+case '133'	:ff_targ_text='Live Stream';  ff_targ='http://vdo.ninja/?room=hf22'; break;								
 // https://bit.ly/hfroom22          https://haringeyfixers.github.io/redir/rdhsc1.htm?r=133
 case '134'	:ff_targ_text='HF Repairers - event attendance';  ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdUO6x4Hx2l3MFpInw0-lCioP4FvF007A2e23PVBbKQDXUsuA/viewform?usp=header'; break;								
 // https://bit.ly/hfbthere         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=134
-
+case '135'	:ff_targ_text='HF Repairers - event attendance';  ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdUO6x4Hx2l3MFpInw0-lCioP4FvF007A2e23PVBbKQDXUsuA/viewform?usp=header'; break;								
+// https://bit.ly/hfnewad         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=135
+		
 									
 default:sw_targ=false;break;									
 }									
