@@ -27,6 +27,8 @@ case '134'	:ff_targ_text='HF Repairers - event attendance';  ff_targ='https://do
 // https://bit.ly/hfbthere         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=134
 case '135'	:ff_targ_text='HF new admin';  ff_targ='https://forms.gle/eA1aion7bKWXg5W46'; break;								
 // https://bit.ly/hfnewad         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=135
+case '136'	:ff_targ_text='HF book a free slot';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
+https://bit.ly/hf2book         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=136
 		
 									
 default:sw_targ=false;break;									
