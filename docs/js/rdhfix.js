@@ -1,4 +1,4 @@
-let urlParams = {}, hfsw="h"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let ffDebug=true; let urlParams = {}, hfsw="h"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 (window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
         decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
@@ -20,7 +20,9 @@ case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.googl
                 // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
 case 'f24'	:ff_targ_text='HfixAdmin';  ff_targ='https://docs.google.com/spreadsheets/d/1PeSyLKmi4tophgGlAk_ibcVGnw87pKLqYq3bexHNx34/edit?gid=396576013#gid=396576013&range=A1';break; 
         // bit.ly/hfixadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f24					
-case 'f25'	:ff_targ_text='Hfix booking - Disclaimer'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdWSjWvS4EhvsDq8tSPRbi0LrPcZ8lyB1FufprsNvT9KyX6pg/viewform?usp=sf_link';break; 
+case 'f25'	:ff_targ_text='Hfix booking - Disclaimer'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdWSjWvS4EhvsDq8tSPRbi0LrPcZ8lyB1FufprsNvT9KyX6pg/viewform?usp=sf_link';
+                if (ffDebug==true) {sw_targ=false;console.log (urlParams)}
+                break; 
         // bit.ly/HfixBookDisclaim https://haringeyfixers.github.io/redir/rdhfix.htm?h=f25					
 case 'f26'	:ff_targ='https://docs.google.com/document/d/1eG0dSxRZs4BNA-SKhmCuvdOkXz8cWkO5256vlxa5kEA/edit?usp=sharing'; ff_targ_text='generic-short'; break; 
         // bit.ly/hfgen22 https://haringeyfixers.github.io/redir/rdhfix.htm?h=f26					
