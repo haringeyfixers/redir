@@ -1,4 +1,4 @@
-let ffDebug=true; let urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let ffDebug=false; let urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 (window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
         decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
