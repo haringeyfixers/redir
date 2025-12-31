@@ -22,19 +22,22 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
     case 'hf22'	: ff_targ_text='Donation', ff_targ='https://square.link/u/1Ab8X7S0'; break; 
     // https://bit.ly/2give2hf https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf22 
                        
-    case 'hf23'	: ff_targ_text='MHSG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1xYG9nd38ZbXpbVOnYhM6GsOSwme_vNNF98q5wQ4YXH0/edit?gid=1162216020#gid=1162216020'; break;
+    case 'hf23'	: ff_targ_text='MHSG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1nE6gjbvpvORyTC9yrjXqT8tdsU06BiUcuyH1EDKCIeM/edit?usp=sharing'; break;
     // https://bit.ly/mhsg_Jobsheet https://bit.ly/hfgen23 4fLouXv https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf23 
                          
-    case 'hf24'	: ff_targ_text='All Good Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1B9sg7V59OM85Isku3pvgnMjLbYAm9ZotxWpfQcq7S20/edit?gid=1162216020#gid=1162216020'; break; 
+    case 'hf24'	: ff_targ_text='All Good Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1B9sg7V59OM85Isku3pvgnMjLbYAm9ZotxWpfQcq7S20/edit?usp=sharing'; break; 
     // https://bit.ly/allgood_Jobsheet  https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf24 
                          
-    case 'hf25'	: ff_targ_text='BWF Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1dVXwXs39avZlqnN0EDUow4jybS6pZkqtjTedNvpx0j4/edit?gid=1162216020#gid=1162216020'; break; 
+    case 'hf25'	: ff_targ_text='BWF Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/10fFlonc9dUGxNviw1wGj9dtiuAfG8cjFNbdBuAFN_GY/edit?usp=sharing'; break; 
     // https://bit.ly/bwf_Jobsheet  spare https://bit.ly/hfgen25 3C37BK6 https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf25 
                          
-    case 'hf26'	: ff_targ_text='CRC Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1Mu-IEIfnLg9WF-MXN2nVdTGzOYxmA5VGTRaUziPQloI/edit?gid=1162216020#gid=1162216020'; break; 
+    case 'hf26'	: ff_targ_text='CRC Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1t-3vJqJUEtmgEr_V1I8PQwi-3WR4R3kVqAMUE3nIWPs/edit?usp=sharing'; break; 
     // https://bit.ly/crc_Jobsheet https://bit.ly/hfgen26 3DMp5ee https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf26 
+	
+	case 'hf26a'	: ff_targ_text='HG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1S4jRAygerNliCt4dKi90X-7QDUTzKoEQo7TQWTECwHU/edit?usp=drive_link'; break; 
+    // https://bit.ly/hg_Jobsheet https://bit.ly/hfgen26 3DMp5ee https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf26a 
                         
-    case 'hf27'	: ff_targ_text='WG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1d3xnC0if3U-fCtlYtFne1Ao6ftYlK6FygtoJf1TXUxo/edit?gid=1162216020#gid=1162216020'; break; 
+    case 'hf27'	: ff_targ_text='WG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/15C9Z7_YVANSaU7EHvxBrJ340HpNKY4gZmJE7Z-g-uE8/edit?usp=sharing'; break; 
     // https://bit.ly/wg_Jobsheet https://bit.ly/hfgen27 41XzGgC https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf27 
                         
     case 'hf28'	: ff_targ_text='Jewellery Workshop, register interest', ff_targ="https://docs.google.com/forms/d/e/1FAIpQLSez_GqDpkkY8WUeB9z5lgyOc750dSXV_hzZM-zysUwilAfeTQ/viewform?usp=header"; break; 
