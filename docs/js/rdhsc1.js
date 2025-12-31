@@ -29,10 +29,20 @@ case '135'	:ff_targ_text='HF new admin';  ff_targ='https://forms.gle/eA1aion7bKW
 // https://bit.ly/hfnewad         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=135
 case '136'	:ff_targ_text='HF book a free slot';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
 // https://bit.ly/hf2book         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=136
-case '137'	:ff_targ_text='HF book a free slot';  ff_targ='https://docs.google.com/document/d/1GcCRIGBBee0yBSorIZjee9kZRv7raU5Y57THLCT_7MM/edit?usp=sharing'; break;								
+case '137'	:ff_targ_text='HF Practice Methods';  ff_targ='https://docs.google.com/document/d/1GcCRIGBBee0yBSorIZjee9kZRv7raU5Y57THLCT_7MM/edit?usp=sharing'; break;								
 // https://bit.ly/hfpracman         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=137
-case '138'	:ff_targ_text='HF book a free slot';  ff_targ='https://docs.google.com/spreadsheets/d/1yezHEYdjAdGbwuGSsYwqr8atY-tK92fRTSUAucWnsbE/edit?usp=sharing'; break;								
+case '138'	:ff_targ_text='HF Practice Manuals';  ff_targ='https://docs.google.com/spreadsheets/d/1yezHEYdjAdGbwuGSsYwqr8atY-tK92fRTSUAucWnsbE/edit?usp=sharing'; break;								
 // https://bit.ly/hfpracmeth         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=138
+case '139'	:ff_targ_text='Highgate Repair Café';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
+// https://bit.ly/highgaterc HIGHGATERC Highgaterc (HighgateRC goes direct)         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=139
+case '141'	:ff_targ_text='HF NOT YET';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
+// https://bit.ly/haringeyrc         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=141
+case '142'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
+// https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=142
+case '143'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
+// https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=143
+case '144'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
+// https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=144
 		
 									
 default:sw_targ=false;break;									
