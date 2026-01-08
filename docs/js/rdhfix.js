@@ -55,7 +55,7 @@ case 'h40'	:ff_targ_text='Haringey Fixers Bringers Feedback Survey 24'; ff_targ=
         // https://bit.ly/hfbf24 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h40									
 case 'h41'	:ff_targ_text='Haringey Fixers Annual tasks'; ff_targ='https://docs.google.com/spreadsheets/d/1g1c_0WhnwjK9ufFKibrDLYCr0oUwyG7sW01OReBRYkA/edit?gid=1983948080#gid=1983948080&range=A1';	break; 
         // https://bit.ly/hfyearly https://haringeyfixers.github.io/redir/rdhfix.htm?h=h41	
-case 'h42'	:ff_targ_text='Haringey Fixers Expense Claim'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdIXF-EQf2lMO656gHb-xICO23KrgUniCEBKFM4duyoitP3iA/viewform?usp=header';	break;
+case 'h42'	:ff_targ_text='Haringey Fixers Expense Claim'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdIXF-EQf2lMO656gHb-xICO23KrgUniCEBKFM4duyoitP3iA/viewform?usp=pp_url&entry.1706514191=No'; break;
         // https://bit.ly/hfexclaim https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42
 case 'h43'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
         // https://bit.ly/stm43 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h43	
