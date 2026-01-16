@@ -19,7 +19,7 @@ case 'f22'	:ff_targ_text='Haringey Fixers';  ff_targ='https://HaringeyFixers.org
                 // bit.ly/HaringeyFixers https://haringeyfixers.github.io/redir/rdhfix.htm?h=f22	
 case 'f23'	:ff_targ_text='Haringey Fixers Overview'; ff_targ='https://docs.google.com/spreadsheets/d/1LaCUWUF886CihC-RcnagpLZMLllJtATr6qsTUHKg3Ss/edit?usp=sharing';break;
                 // http://bit.ly/hfixovw https://haringeyfixers.github.io/redir/rdhfix.htm?h=f23
-case 'f24'	:ff_targ_text='HfixAdmin';  ff_targ='https://docs.google.com/spreadsheets/d/1PeSyLKmi4tophgGlAk_ibcVGnw87pKLqYq3bexHNx34/edit?gid=396576013#gid=396576013&range=A1';break; 
+case 'f24'	:ff_targ_text='HF Repairs DB past';  ff_targ='https://docs.google.com/spreadsheets/d/1PeSyLKmi4tophgGlAk_ibcVGnw87pKLqYq3bexHNx34/edit?usp=sharing';break; 
         // bit.ly/hfixadmin https://haringeyfixers.github.io/redir/rdhfix.htm?h=f24					
 case 'f25'	:ff_targ_text='Hfix booking - Disclaimer'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdWSjWvS4EhvsDq8tSPRbi0LrPcZ8lyB1FufprsNvT9KyX6pg/viewform?usp=sf_link';break; 
         // bit.ly/HfixBookDisclaim https://haringeyfixers.github.io/redir/rdhfix.htm?h=f25					
@@ -57,7 +57,7 @@ case 'h41'	:ff_targ_text='Haringey Fixers Annual tasks'; ff_targ='https://docs.g
         // https://bit.ly/hfyearly https://haringeyfixers.github.io/redir/rdhfix.htm?h=h41	
 case 'h42'	:ff_targ_text='Haringey Fixers Expense Claim'; ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdIXF-EQf2lMO656gHb-xICO23KrgUniCEBKFM4duyoitP3iA/viewform?usp=pp_url&entry.1706514191=No'; break;
         // https://bit.ly/hfexclaim https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42
-case 'h43'	:ff_targ_text='Haringey Fixers Past Repairs'; ff_targ='https://docs.google.com/spreadsheets/d/1HpZqhjNjXjPVBdhzdECOibVz6Op6Wh4wCnxBKSUssJA/edit?usp=sharing';	break; 
+case 'h43'	:ff_targ_text='Haringey Fixers Past Repairs'; ff_targ='https://docs.google.com/spreadsheets/d/1PeSyLKmi4tophgGlAk_ibcVGnw87pKLqYq3bexHNx34/edit?usp=sharing';	break; 
         // https://bit.ly/hfpast https://haringeyfixers.github.io/redir/rdhfix.htm?h=h43	
 case 'h44'	:ff_targ_text='tttttttttttttttttt'; ff_targ='https://';	break; 
         // https://bit.ly/stm44 https://haringeyfixers.github.io/redir/rdhfix.htm?h=h44	
