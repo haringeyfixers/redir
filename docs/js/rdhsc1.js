@@ -35,8 +35,8 @@ case '138'	:ff_targ_text='HF Practice Manuals';  ff_targ='https://docs.google.co
 // https://bit.ly/hfpracmeth         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=138
 case '139'	:ff_targ_text='Highgate Repair Café';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
 // https://bit.ly/highgaterc HIGHGATERC Highgaterc (HighgateRC goes direct)         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=139
-case '141'	:ff_targ_text='HF NOT YET';  ff_targ='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'; break;								
-// https://bit.ly/haringeyrc         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=141
+case '141'	:ff_targ_text='HF Repair Database';  ff_targ='https://docs.google.com/spreadsheets/d/1HpZqhjNjXjPVBdhzdECOibVz6Op6Wh4wCnxBKSUssJA/edit?usp=sharing'; break;								
+// https://bit.ly/hfrepdb        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=141
 case '142'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
 // https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=142
 case '143'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
