@@ -1,5 +1,5 @@
 // let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
-let urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let ffCalledBy="rgo.htm", urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 (window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
         decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
@@ -109,6 +109,6 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffURL, qs);
+redirectWithBackgroundUpdate(ffURL, qs+"_"+ffCalledBy);
 
 // if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
