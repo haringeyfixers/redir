@@ -4,12 +4,12 @@ importScripts('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-comp
 
 // Initialize Firebase inside the Worker
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDoh2cBbbo_rleGZSF9QODh7q4sQdjN3_0",
+  authDomain: "activity-db-8b49f.firebaseapp.com",
+  projectId: "activity-db-8b49f",
+  storageBucket: "activity-db-8b49f.firebasestorage.app",
+  messagingSenderId: "108478103688",
+  appId: "1:108478103688:web:8b44ea48d9650b4d6d9f3d"
 };
 
 firebase.initializeApp(firebaseConfig);
