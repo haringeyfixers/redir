@@ -79,7 +79,7 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
   if ('serviceWorker' in navigator) {
     try {
       // 1. Register/Get the Service Worker
-      const registration = await navigator.serviceWorker.register('/sw.js');
+      const registration = await navigator.serviceWorker.register('sw.js');
       
       // Ensure the worker is active before sending message
       const worker = registration.active || registration.installing || registration.waiting;
@@ -111,8 +111,4 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 // Usage:
 redirectWithBackgroundUpdate(ffURL, 'rgo1');
 
-
-
-
-if (sw_targ==true) {window.location.href=ff_targ;}
-else {document.write('There may have been an error - no action possible:'+ff_targ);}
+// if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
