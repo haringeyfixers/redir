@@ -58,7 +58,8 @@ function getNextEventURL(eventData) {
 }
 
 // --- ASSIGNMENT & LOGGING ---
-const ffURL = getNextEventURL(hfevents);
+let ffURL = getNextEventURL(hfevents);
+if (ffURL==null) {ffURL='https://haringeyfixers.eventbrite.com'}
 ff_targ_text='Haringey Fixers';  ff_targ=ffURL
 console.log("The next event URL is: " + ffURL);
 // https://haringeyfixers.github.io/redir/rgo.htm?h=A4 h=a5, h=a3
