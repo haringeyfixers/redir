@@ -62,7 +62,7 @@ let ffURL = getNextEventURL(hfevents);
 if (ffURL==null) {ffURL='https://haringeyfixers.eventbrite.com'}
 ff_targ_text='Haringey Fixers';  ff_targ=ffURL
 console.log("The next event URL is: " + ffURL);
-// https://haringeyfixers.github.io/redir/rgo.htm?h=A4 h=a5, h=a3
+// https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
 
 /*
 // --- TESTS ---
@@ -110,6 +110,6 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffURL, qs+"_"+ffCalledBy);
+redirectWithBackgroundUpdate(ffURL, qs+"_"+ffCalledBy+"_"+hfparm);
 
 // if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
