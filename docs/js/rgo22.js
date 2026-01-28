@@ -1,19 +1,14 @@
 // let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
-let ffURL='https://haringeyfixers.eventbrite.com'; // default
-let ffCalledBy="rgo.htm", urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
-(window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
-        search = /([^&=]+)=?([^&]*)/g,
-        decode = function (s) { return decodeURIComponent(s.replace(pl, " "));  },
-        query = window.location.search.substring(1);
+let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+const params = new URLSearchParams(window.location.search);
+// Initialize your variables
+let sw_targ = true;
+let ff_targ_text = '';
+let ff_targ = '';
+let ffURL='';
 
-    while (match = search.exec(query)) {
-        if (decode(match[1]) in urlParams) {
-            if (!Array.isArray(urlParams[decode(match[1])])) { urlParams[decode(match[1])] = [urlParams[decode(match[1])]]; }
-            urlParams[decode(match[1])].push(decode(match[2]));
-        } else { urlParams[decode(match[1])] = decode(match[2]); }
-    }
-})();
-let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams[hfsw], hfparm=urlParams[hfp]; 
+let parm22 = params.get(parm_h); 
+let parm33 = params.get(parm_p);
 
 // --- Individual events ---
 const hfevents = [
@@ -110,6 +105,6 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffURL, qs+"_"+ffCalledBy+"_"+hfparm);
+redirectWithBackgroundUpdate(ffURL, parm22+"_"+ffCalledBy+"_"+parm33);
 
 // if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
