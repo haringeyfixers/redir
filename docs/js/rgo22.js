@@ -1,6 +1,7 @@
 // let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
 // https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
 let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let userAgent = navigator.userAgent;
 const params = new URLSearchParams(window.location.search);
 
 let sw_targ = true;
@@ -94,5 +95,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffURL, parm22+"_"+ffCalledBy+"_"+parm33);
+redirectWithBackgroundUpdate(ffURL, parm22+"_"+ffCalledBy+"_"+parm33+"_agent="+userAgent);
 // if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
