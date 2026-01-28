@@ -1,4 +1,5 @@
 // https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
+// https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
 let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
 const params = new URLSearchParams(window.location.search);
