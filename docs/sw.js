@@ -32,3 +32,13 @@ self.addEventListener('message', (event) => {
     );
   }
 });
+
+self.addEventListener('install', (event) => {
+  // Forces the waiting service worker to become the active service worker
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', (event) => {
+  // Forces all open tabs to be controlled by this new worker immediately
+  event.waitUntil(clients.claim());
+});
