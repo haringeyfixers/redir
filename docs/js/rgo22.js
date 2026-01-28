@@ -95,5 +95,4 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 
 // Usage:
 redirectWithBackgroundUpdate(ffURL, parm22+"_"+ffCalledBy+"_"+parm33);
-
 // if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
