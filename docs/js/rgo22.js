@@ -1,7 +1,8 @@
 // let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
+// https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
 let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 const params = new URLSearchParams(window.location.search);
-// Initialize your variables
+
 let sw_targ = true;
 let ff_targ_text = '';
 let ff_targ = '';
@@ -43,7 +44,6 @@ function s22getNearestFutureEvent(eventData, fakeNow = new Date()) {
   }, null);
 }
 
-// --- NEW FUNCTION: ASSIGN URL ---
 /**
  * Gets the next event and returns only the URL string.
  */
@@ -55,22 +55,11 @@ function getNextEventURL(eventData) {
 // --- ASSIGNMENT & LOGGING ---
 ffURL = getNextEventURL(hfevents);
 if (ffURL==null) {ffURL='https://haringeyfixers.eventbrite.com'}
+// comment the below out if you really want an auto-updating one
+ffURL='https://haringeyfixers.eventbrite.com'
 ff_targ_text='Haringey Fixers';  ff_targ=ffURL
 console.log("The next event URL is: " + ffURL);
-// https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
 
-/*
-// --- TESTS ---
-// Testing with Mar 21, 2026
-const testDateMar = new Date(2026, 2, 21);
-const testResultMar = s22getNearestFutureEvent(hfevents, testDateMar);
-console.log("Test (Mar 21): Returns " + testResultMar.date); // Should be 14/02/2026
-
-// Testing with early month (Feb 1, 2026)
-const testDateFeb = new Date(2026, 1, 1);
-const testResultFeb = s22getNearestFutureEvent(hfevents, testDateFeb);
-console.log("Test (Feb 01): Returns " + testResultFeb.date); // Should still be 14/02/2026
-*/
 async function redirectWithBackgroundUpdate(targetUrl, valueX) {
   if ('serviceWorker' in navigator) {
     try {
