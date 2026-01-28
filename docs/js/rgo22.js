@@ -1,13 +1,9 @@
-// let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
 // https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
 let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
 const params = new URLSearchParams(window.location.search);
 
-let sw_targ = true;
-let ff_targ_text = '';
-let ff_targ = '';
-let ffURL='';
+let ffTarget_URL='';
 
 let parm22 = params.get(parm_h); 
 let parm33 = params.get(parm_p);
@@ -54,12 +50,11 @@ function getNextEventURL(eventData) {
 }
 
 // --- ASSIGNMENT & LOGGING ---
-ffURL = getNextEventURL(hfevents);
-if (ffURL==null) {ffURL='https://haringeyfixers.eventbrite.com'}
+ffTarget_URL = getNextEventURL(hfevents);
+if (ffTarget_URL==null) {ffTarget_URL='https://haringeyfixers.eventbrite.com'}
 // comment the below out if you really want an auto-updating one
-ffURL='https://haringeyfixers.eventbrite.com'
-ff_targ_text='Haringey Fixers';  ff_targ=ffURL
-console.log("The next event URL is: " + ffURL);
+ffTarget_URL='https://haringeyfixers.eventbrite.com'
+console.log("The next event URL is: " + ffTarget_URL);
 
 async function redirectWithBackgroundUpdate(targetUrl, valueX) {
   if ('serviceWorker' in navigator) {
@@ -95,5 +90,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffURL, parm22+"_"+ffCalledBy+"_"+parm33+"_agent="+userAgent);
-// if (sw_targ==true) {window.location.href=ff_targ;} else {document.write('There may have been an error - no action possible:'+ff_targ);}
+redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_agent="+userAgent);
+// if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
