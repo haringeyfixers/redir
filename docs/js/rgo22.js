@@ -1,4 +1,5 @@
 // let ffDebug=false; if (ffDebug==true) {sw_targ=false;console.log (urlParams)}; break; https://haringeyfixers.github.io/redir/rdhfix.htm?h=h42&p=test123
+let ffURL='https://haringeyfixers.eventbrite.com'; // default
 let ffCalledBy="rgo.htm", urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 (window.onpopstate = function () { let match, pl = /\+/g,  // Regex for replacing addition symbol with a space
         search = /([^&=]+)=?([^&]*)/g,
@@ -14,8 +15,7 @@ let ffCalledBy="rgo.htm", urlParams = {}, hfsw="h", hfp="p"; //CHANGE THIS SWTIC
 })();
 let sw_targ=true, ff_targ_text='', ff_targ='', qs= urlParams[hfsw], hfparm=urlParams[hfp]; 
 
-
-// --- EXISTING DATA ---
+// --- Individual events ---
 const hfevents = [
 	{ date:'14/02/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1978898111522'},
 	{ date:'14/03/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306559227'},
@@ -58,7 +58,7 @@ function getNextEventURL(eventData) {
 }
 
 // --- ASSIGNMENT & LOGGING ---
-let ffURL = getNextEventURL(hfevents);
+ffURL = getNextEventURL(hfevents);
 if (ffURL==null) {ffURL='https://haringeyfixers.eventbrite.com'}
 ff_targ_text='Haringey Fixers';  ff_targ=ffURL
 console.log("The next event URL is: " + ffURL);
