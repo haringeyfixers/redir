@@ -1,11 +1,11 @@
 // https://haringeyfixers.github.io/redir/rgo.htm?b=loc22&h=a5&l=loc33&p=hrc
 // https://bit.ly/hf26h https://haringeyfixers.github.io/redir/rgo.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
-let ffCalledBy="rgo.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p", ; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let ffCalledBy="rgo.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
 const params = new URLSearchParams(window.location.search);
 
-let ffTarget_URL='';
+let ffTarget_URL='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019';
 
 let p_bitly    = params.get(parm_b); if (parm11==null) {parm11="not from Bitly"}// b=bit.ly from which location?
 let p_Asize    = params.get(parm_h); // size of medium eg A5
@@ -54,11 +54,9 @@ function getNextEventURL(eventData) {
 }
 
 // --- ASSIGNMENT & LOGGING ---
-ffTarget_URL = getNextEventURL(hfevents);
-if (ffTarget_URL==null) {ffTarget_URL='https://haringeyfixers.eventbrite.com'}
-// comment the below out if you really want an auto-updating one
-ffTarget_URL='https://haringeyfixers.eventbrite.com'
-console.log("The next event URL is: " + ffTarget_URL);
+// ffTarget_URL = getNextEventURL(hfevents);
+// if (ffTarget_URL==null) {ffTarget_URL='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'}
+// console.log("The forward URL is: " + ffTarget_URL);
 
 async function redirectWithBackgroundUpdate(targetUrl, valueX) {
   if ('serviceWorker' in navigator) {
