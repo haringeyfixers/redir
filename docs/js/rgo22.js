@@ -7,7 +7,7 @@ const params = new URLSearchParams(window.location.search);
 
 let ffTarget_URL='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019';
 
-let p_bitly    = params.get(parm_b); if (parm11==null) {parm11="not from Bitly"}// b=bit.ly from which location?
+let p_bitly    = params.get(parm_b); if (p_bitly==null) {p_bitly="not from Bitly"}// b=bit.ly from which location?
 let p_Asize    = params.get(parm_h); // size of medium eg A5
 let p_location = params.get(parm_l); // location eg N6 6BJ
 let p_topic    = params.get(parm_p); // info about eg hrc - highgate RC
