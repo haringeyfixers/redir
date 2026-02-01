@@ -36,7 +36,10 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
 	
 	case 'hf26a'	: ff_targ_text='HG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1S4jRAygerNliCt4dKi90X-7QDUTzKoEQo7TQWTECwHU/edit?usp=drive_link'; break; 
     // https://bit.ly/hg_Jobsheet https://bit.ly/hfgen26 3DMp5ee https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf26a 
-                        
+
+	case 'hf26b'	: ff_targ_text='HRC Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/1S4jRAygerNliCt4dKi90X-7QDUTzKoEQo7TQWTECwHU/edit?usp=drive_link'; break; 
+    // https://bit.ly/hrc_Jobsheet https://bit.ly/hfgen26 3DMp5ee https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf26b
+			
     case 'hf27'	: ff_targ_text='WG Jobsheet', ff_targ='https://docs.google.com/spreadsheets/d/15C9Z7_YVANSaU7EHvxBrJ340HpNKY4gZmJE7Z-g-uE8/edit?usp=sharing'; break; 
     // https://bit.ly/wg_Jobsheet https://bit.ly/hfgen27 41XzGgC https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf27 
                         
