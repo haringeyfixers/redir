@@ -1,15 +1,16 @@
-// https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
+// https://haringeyfixers.github.io/redir/rgo.htm?b=loc22&h=a5&l=loc33&p=hrc
 // https://bit.ly/hf26h https://haringeyfixers.github.io/redir/rgo.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
-let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p", parm_b="b"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
+let ffCalledBy="rgo.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p", ; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
 const params = new URLSearchParams(window.location.search);
 
 let ffTarget_URL='';
 
-let parm11 = params.get(parm_b); if (parm11==null) {parm11="not supplied"}// b=bit.ly from which location?
-let parm22 = params.get(parm_h); // size of medium eg A5
-let parm33 = params.get(parm_p); // info about eg hrc - highgate RC
+let p_bitly    = params.get(parm_b); if (parm11==null) {parm11="not from Bitly"}// b=bit.ly from which location?
+let p_Asize    = params.get(parm_h); // size of medium eg A5
+let p_location = params.get(parm_l); // location eg N6 6BJ
+let p_topic    = params.get(parm_p); // info about eg hrc - highgate RC
 
 // --- Individual events ---
 const hfevents = [
@@ -93,5 +94,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_bitly="+parm11+"_agent="+userAgent);
+redirectWithBackgroundUpdate(ffTarget_URL, "Called  by_"+ffCalledBy+", Asize_="+p_Asize+ ",From_="+p_location+",About_-"+p_topic+",_Bitly="+p_rc+"_agent="+userAgent);
 // if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
