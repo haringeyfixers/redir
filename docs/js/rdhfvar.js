@@ -46,7 +46,7 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
     case 'hf28'	: ff_targ_text='Jewellery Workshop, register interest', ff_targ="https://docs.google.com/forms/d/e/1FAIpQLSez_GqDpkkY8WUeB9z5lgyOc750dSXV_hzZM-zysUwilAfeTQ/viewform?usp=header"; break; 
     //  https://bit.ly/jwregint https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf28 
 
-                  default:console.log("44 hfgen not found"); sznogo=true;break;} 
+                  default:console.log("L49 hfgen not found"); sznogo=true;break;} 
   break; 
   case 'rcag'	: if (sznogo==true) {console.log("46 rcag nogo test");}// default sznogo=true; ALL GOOD
                   switch(vqs) {
