@@ -1,4 +1,5 @@
 // https://haringeyfixers.github.io/redir/rgo.htm?h=A4&p=hrc h=a5, h=a3
+// https://bit.ly/hf26h https://haringeyfixers.github.io/redir/rgo.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
 let ffCalledBy="rgo.htm", urlParams = {}, parm_h="h", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
@@ -6,8 +7,9 @@ const params = new URLSearchParams(window.location.search);
 
 let ffTarget_URL='';
 
-let parm22 = params.get(parm_h); 
-let parm33 = params.get(parm_p);
+let parm11 = params.get(parm_b); if (parm11==null) {parm11="not supplied"}// b=bit.ly from which location?
+let parm22 = params.get(parm_h); // size of medium eg A5
+let parm33 = params.get(parm_p); // info about eg hrc - highgate RC
 
 // --- Individual events ---
 const hfevents = [
@@ -28,7 +30,7 @@ function parseDMY(s) {
     return new Date(y, m - 1, d); // Months are 0-indexed
 }
 
-// --- UPDATED CORE FUNCTION ---
+// --- CORE FUNCTION ---
 function s22getNearestFutureEvent(eventData, fakeNow = new Date()) {
   return eventData.reduce((nearest, current) => {
     const currentDate = parseDMY(current.date);
@@ -91,5 +93,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_agent="+userAgent);
+redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_bitly location"+parm11+"_agent="+userAgent);
 // if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
