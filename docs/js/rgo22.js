@@ -1,4 +1,4 @@
-// https://haringeyfixers.github.io/redir/rgo.htm?b=loc22&h=a5&l=loc33&p=hrc
+// https://haringeyfixers.github.io/redir/rgo.htm?b=dir&h=a5&l=loc33&p=hrc
 // https://bit.ly/hf26h https://haringeyfixers.github.io/redir/rgo.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
 let ffCalledBy="rgo.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
