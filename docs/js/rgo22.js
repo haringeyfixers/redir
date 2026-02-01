@@ -93,5 +93,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_bitly location"+parm11+"_agent="+userAgent);
+redirectWithBackgroundUpdate(ffTarget_URL, parm22+"_"+ffCalledBy+"_"+parm33+"_bitly="+parm11+"_agent="+userAgent);
 // if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
