@@ -39,8 +39,8 @@ case '141'	:ff_targ_text='HF Repair Database';  ff_targ='https://docs.google.com
 // https://bit.ly/hfrepdb        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=141
 case '142'	:ff_targ_text='HF Highgate Repair Café new entrant';  ff_targ='https://docs.google.com/forms/d/e/1FAIpQLSdmZ5ST06k-LvV2I9yxpRvp2RkCDv9i2Q3pCLXFNTgn_HGM_w/viewform?usp=publish-editor'; break;								
 // https://bit.ly/hf2hrc3         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=142
-case '143'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
-// https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=143
+case '143'	:ff_targ_text='HF Disclaimer PArents\Carers with Children';  ff_targ='HF NOT YET'; break;								
+// /https://bit.ly/hfrcdpc        https://haringeyfixers.github.io/redir/rdhsc1.htm?r=143
 case '144'	:ff_targ_text='HF NOT YET';  ff_targ='HF NOT YET'; break;								
 // https://bit.ly/HF NOT YET         https://haringeyfixers.github.io/redir/rdhsc1.htm?r=144
 		
