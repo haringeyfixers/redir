@@ -12,6 +12,8 @@ let p_bitly    = params.get(parm_b); if (p_bitly==null) {p_bitly="not from Bitly
 let p_Asize    = params.get(parm_h); // size of medium eg A5
 let p_location = params.get(parm_l); // location eg N6 6BJ
 let p_topic    = params.get(parm_p); // info about eg hrc - highgate RC
+const ffOut="Called  by_"+ffCalledBy+", Asize_"+p_Asize+ ", From_"+p_location+", About_"+p_topic+", Bitly_"+p_bitly+", Agent_"+userAgent;
+const ffEncoded=encodeURIComponent(ffOut);
 
 // --- Individual events ---
 const hfevents = [
@@ -57,7 +59,8 @@ function getNextEventURL(eventData) {
 // --- ASSIGNMENT & LOGGING ---
 // ffTarget_URL = getNextEventURL(hfevents);
 // if (ffTarget_URL==null) {ffTarget_URL='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'}
-if (p_location=="loc44") {ffTarget_URL='https://haringeyfixers.org/about-us/venues/venue-highgate?/utm=htl'}
+const ffRDparms="Called  by_"+ffCalledBy+", Asize_"+p_Asize+ ", From_"+p_location+", About_"+p_topic+", Bitly_"+p_bitly+", Agent_"+userAgent;
+if (p_location=="loc44") {ffTarget_URL='https://haringeyfixers.org/about-us/venues/venue-highgate?utm='+ffEncoded}
 // console.log("The forward URL is: " + ffTarget_URL);
 
 async function redirectWithBackgroundUpdate(targetUrl, valueX) {
@@ -94,6 +97,5 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 }
 
 // Usage:
-const ffOut="Called  by_"+ffCalledBy+", Asize_"+p_Asize+ ", From_"+p_location+", About_"+p_topic+", Bitly_"+p_bitly+", Agent_"+userAgent;
 redirectWithBackgroundUpdate(ffTarget_URL,ffOut);
 // if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
