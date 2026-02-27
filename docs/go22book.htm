@@ -1,17 +1,66 @@
 <!DOCTYPE HTML><html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta property="og:site_name" content="Quick redirects"><meta property="og:title" content="Haringey Fixers" /><meta property="og:description" content="Takes a while to load, please be patient" />
 <meta property="og:image" content="https://haringeyfixers.org/2sz/favicons/25/web-app-manifest-512x512.png" />
-<link rel="canonical" href="http://haringeyfixers.github.io/redir/rgo.htm" /><meta name="robots" content="noindex,nofollow" />
+<link rel="canonical" href="http://haringeyfixers.github.io/redir/go22book.htm" /><meta name="robots" content="noindex,nofollow" />
 <script src="js/go22book.js"></script></head><body>
-<script type="module">// to be completed- for qr code booking
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Haringey Fixers - Booking</title>
+    
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: #f4f4f4; }
+        .booking-card { 
+            background: white; padding: 20px; border-radius: 8px; 
+            max-width: 400px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h2 { color: #333; margin-top: 0; }
+        input, select, button { 
+            width: 100%; padding: 12px; margin: 8px 0; 
+            border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; 
+        }
+        button { 
+            background-color: #28a745; color: white; border: none; 
+            font-weight: bold; cursor: pointer; font-size: 16px;
+        }
+        button:disabled { background-color: #ccc; }
+        .hidden { display: none; }
+        #message { text-align: center; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+<div class="booking-card">
+    <h2>Repair Booking</h2>
+    <p>Please enter your details to book a slot.</p>
+    
+    <form id="bookingForm">
+        <input type="text" id="userName" placeholder="Your Name" required>
+        <input type="email" id="userEmail" placeholder="Email Address" required>
+        <select id="itemType" required>
+            <option value="" disabled selected>What needs fixing?</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing/Textiles</option>
+            <option value="Mechanical">Mechanical/General</option>
+            <option value="Computers">Laptop/Computer</option>
+        </select>
+        <button type="submit" id="submitBtn">Confirm Booking</button>
+    </form>
+    
+    <div id="message"></div>
+</div>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    // import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Fb config
   const firebaseConfig = {
     apiKey: "AIzaSyDoh2cBbbo_rleGZSF9QODh7q4sQdjN3_0",
     authDomain: "activity-db-8b49f.firebaseapp.com",
@@ -20,10 +69,46 @@
     messagingSenderId: "108478103688",
     appId: "1:108478103688:web:8b44ea48d9650b4d6d9f3d",
     measurementId: "G-PVWJ80PRM9"
-  };
+   };
 
-  // Initialize Firebase
+  // Initialize Firebase and Firestore
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentEvent = urlParams.get('event') || 'General';
+// Pass 'currentEvent' into your createBooking function!
+  /**
+   * Function to save a new booking to the 'bookings' collection
+   * @param {string} userName - Name of the person booking
+   * @param {string} eventId - The ID of the repair event
+   */
+  async function createBooking(userName, eventId) {
+    try {
+      const docRef = await addDoc(collection(db, "bookings"), {
+        name: userName,
+        event: eventId,
+        status: "pending",
+        createdAt: serverTimestamp() // Uses Firebase server time, not local user time
+      });
+      
+      console.log("Booking successful! ID:", docRef.id);
+      alert("Thank you! Your booking is confirmed.");
+      
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      alert("Booking failed. Please check your internet connection.");
+    }
+  }
+
+  // Example: Expose the function to the window so you can call it from a button
+  window.makeBooking = () => {
+    const name = prompt("Enter your name:");
+    if (name) createBooking(name, "Haringey-Fixers-Feb-2026");
+  };
 </script>
+
+<button onclick="makeBooking()" style="padding: 10px; margin-top: 20px;">
+  Click to Book for Repair Event
+</button>
 </body></html>

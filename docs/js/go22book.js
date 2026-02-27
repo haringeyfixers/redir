@@ -101,7 +101,7 @@ const payload = {
   action: "Manual Trigger",
   value: 42,
   timestamp: new Date().toISOString(),
-  apiKey: "Superqweasd123Secret", // Matches the property we set
+  toKhf: "Superqweasd123Secret", // Matches the property we set
   user: "JS Console",
   message: "Authenticated Request"
 };
