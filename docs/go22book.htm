@@ -75,8 +75,8 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   
-    const urlParams = new URLSearchParams(window.location.search);
-    const currentEvent = urlParams.get('event') || 'General';
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentEvent = urlParams.get('event') || 'General';
 // Pass 'currentEvent' into your createBooking function!
   /**
    * Function to save a new booking to the 'bookings' collection
@@ -106,6 +106,40 @@
     const name = prompt("Enter your name:");
     if (name) createBooking(name, "Haringey-Fixers-Feb-2026");
   };
+
+  const form = document.getElementById('bookingForm');
+  const msgDiv = document.getElementById('message');
+  const btn = document.getElementById('submitBtn');
+
+  // Logic to handle form submission
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    btn.disabled = true;
+    btn.innerText = "Saving...";
+    msgDiv.innerText = "";
+
+    const bookingData = {
+      name: document.getElementById('userName').value,
+      email: document.getElementById('userEmail').value,
+      item: document.getElementById('itemType').value,
+      timestamp: serverTimestamp(),
+      status: "waiting"
+    };
+
+    try {
+      const docRef = await addDoc(collection(db, "bookings"), bookingData);
+      
+      form.classList.add('hidden');
+      msgDiv.innerHTML = `<span style="color: green;">Success! Reference: ${docRef.id}<br>See you at the event!</span>`;
+      
+    } catch (error) {
+      console.error("Error:", error);
+      msgDiv.innerHTML = `<span style="color: red;">Error saving booking. Please try again.</span>`;
+      btn.disabled = false;
+      btn.innerText = "Confirm Booking";
+    }
+  });
 </script>
 
 <button onclick="makeBooking()" style="padding: 10px; margin-top: 20px;">
