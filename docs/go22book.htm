@@ -17,22 +17,25 @@
 <div class="confirm-box">
     <div>Confirming Booking for Order:</div>
     <div id="orderDisplay">Loading...</div>
+    <div id="nameDisplay">Loading...</div>
     <button id="sendBtn">Send Confirmation</button>
     <div id="statusMsg" style="margin-top:15px;"></div>
 </div>
 
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+    import { initializeApp }                                    from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics }                                     from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged }   from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
 
-    const gasUrl = "https://script.google.com/macros/s/AKfycbzMFL4kDay6l4n_zvDDRfMeoEC43RcbVrwKcmv-OF5RZ9VvkPW5avEaHTW_XZ6-aDUe/exec";
-    // https://script.google.com/macros/s/AKfycbzMFL4kDay6l4n_zvDDRfMeoEC43RcbVrwKcmv-OF5RZ9VvkPW5avEaHTW_XZ6-aDUe/exec
+    const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
 
     const urlParams = new URLSearchParams(window.location.search);
-    const orderID = urlParams.get('OrderID');
+    const orderID = urlParams.get('oid');
+    const customerName = urlParams.get('name');
 
     // UI Elements
     const display = document.getElementById('orderDisplay');
+    const nameID = document.getElementById('nameDisplay');
     const btn = document.getElementById('sendBtn');
     const statusMsg = document.getElementById('statusMsg');
 
@@ -40,6 +43,12 @@
         display.innerText = orderID;
     } else {
         display.innerText = "No ID Found";
+        btn.disabled = true;
+    }
+    if (nameID) {
+        nameID.innerText = customerName;
+    } else {
+        display.innerText = "No Name Found";
         btn.disabled = true;
     }
 
@@ -70,6 +79,49 @@
     }
 
     btn.addEventListener('click', initAndSend);
+    // Initialize Firebase and Firestore
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const db = getFirestore(app);
+  
+    // Automatically sign them in anonymously when the page loads
+    onAuthStateChanged(auth, (user) => {
+        if (!user) {
+            signInAnonymously(auth)
+            .then(() => {
+                console.log("Signed in anonymously");
+            })
+            .catch((error) => {
+                console.error("Auth error:", error.code, error.message);
+            });
+        } else {
+            console.log("User already signed in with UID:", user.uid);
+        }
+    });
+  
+  // Function to handle the booking submission
+  async function submitBooking(customerName, orderID) {
+    try {
+            // Ensure user is signed in anonymously before writing
+            if (!auth.currentUser) {
+                await signInAnonymously(auth);
+            }
+
+            // Add a new document to the "bookings" collection
+            const docRef = await addDoc(collection(db, "bookings"), {
+                name: customerName,
+                orderID: orderID,
+                createdAt: serverTimestamp(), // Trustworthy server-side time
+                userId: auth.currentUser.uid  // Link the booking to this session
+            });
+
+            console.log("Booking successful! ID:", docRef.id);
+            alert("Booking saved!");
+  } catch (error) {
+            console.error("Error saving booking:", error);
+            alert("Failed to save booking. Check console for details.");
+  }
+}
 </script>
 </body>
 </html>
