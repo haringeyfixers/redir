@@ -45,21 +45,20 @@
 </div>
 
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-    // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-    // import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+    import { initializeApp }                                    from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics }                                     from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged }   from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
 
    const url = "https://script.google.com/macros/s/AKfycbxQC41GE7GW_BehGN1dQUADn8KSWFzuHz2IgcTfJ3qXVY6N1vttvfHh2qLmFYuO-Kgj/exec";
-
+   
    const getFirebaseConfig = async () => {
-    const response = await fetch(url, {
+   const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify({
             token: "Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL" // This must match the script exactly
-         })
+        })
    });
    
   const firebaseConfig = await response.json();
@@ -74,6 +73,22 @@
   // Initialize Firebase and Firestore
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+  const auth = getAuth();
+  
+  // Automatically sign them in anonymously when the page loads
+  onAuthStateChanged(auth, (user) => {
+    if (!user) {
+        signInAnonymously(auth)
+        .then(() => {
+            console.log("Signed in anonymously");
+        })
+        .catch((error) => {
+            console.error("Auth error:", error.code, error.message);
+        });
+    } else {
+        console.log("User already signed in with UID:", user.uid);
+    }
+  });
   
   const urlParams = new URLSearchParams(window.location.search);
   const currentEvent = urlParams.get('event') || 'General';
