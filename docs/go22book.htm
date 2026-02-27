@@ -23,9 +23,10 @@
 </div>
 
 <script type="module">
-    import { initializeApp }                                    from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-    import { getAnalytics }                                     from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-    import { getAuth, signInAnonymously, onAuthStateChanged }   from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
+    import { initializeApp }                                     from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics }                                      from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged }    from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
+    import { getFirestore, collection, query, orderBy, getDocs } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
     const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
 
@@ -99,9 +100,9 @@
         }
     });
   
-  // Function to handle the booking submission
-  async function submitBooking(customerName, orderID) {
-    try {
+    // Function to handle the booking submission
+    async function submitBooking(customerName, orderID) {
+        try {
             // Ensure user is signed in anonymously before writing
             if (!auth.currentUser) {
                 await signInAnonymously(auth);
@@ -117,10 +118,39 @@
 
             console.log("Booking successful! ID:", docRef.id);
             alert("Booking saved!");
-  } catch (error) {
-            console.error("Error saving booking:", error);
-            alert("Failed to save booking. Check console for details.");
-  }
+        } catch (error) {
+                console.error("Error saving booking:", error);
+                alert("Failed to save booking. Check console for details.");
+            }
+        }
+    async function loadAllBookings() {
+        const db = getFirestore();
+        const bookingsRef = collection(db, "bookings");
+  
+        // Sort by the server timestamp we created earlier
+        const q = query(bookingsRef, orderBy("createdAt", "desc"));
+
+        try {
+                const querySnapshot = await getDocs(q);
+                const tableBody = document.getElementById("bookings-table-body");
+                tableBody.innerHTML = ""; // Clear existing rows
+
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    const date = data.createdAt ? data.createdAt.toDate().toLocaleString() : "Pending...";
+      
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td>${date}</td>
+                            <td>${data.name}</td>
+                            <td>${doc.id}</td>
+                        </tr>
+                    `;
+                });
+            } catch (error) {
+                console.error("Permission denied or error:", error);
+                alert("You do not have permission to view this data. Check your Admin UID!");
+            }
 }
 </script>
 </body>
