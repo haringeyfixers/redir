@@ -1,5 +1,5 @@
-// https://haringeyfixers.github.io/redir/rgo.htm?b=dir&h=a5&l=loc33&p=hrc
-// https://bit.ly/hf26h https://haringeyfixers.github.io/redir/rgo.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
+// https://haringeyfixers.github.io/redir/go22book.htm?b=dir&h=a5&l=loc33&p=mh p=hrc p=crc p=bwf p=ag
+// https://bit.ly/hf26h https://haringeyfixers.github.io/redir/go22book.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
 let ffCalledBy="go22book.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
 let userAgent = navigator.userAgent;
@@ -94,4 +94,25 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 // Usage:
 const ffOut="Called  by_"+ffCalledBy+", Asize_"+p_Asize+ ", From_"+p_location+", About_"+p_topic+", Bitly_"+p_bitly+", Agent_"+userAgent;
 redirectWithBackgroundUpdate(ffTarget_URL,ffOut);
+const webAppUrl = "https://script.google.com/macros/s/AKfycbz2eHTUEAv19CEfyckLvnbhWPW6SgxO8tRVZLJs2DlOQLmY305LAb2zMBxFn04pIc2I/exec"; // Replace this
+
+const payload = {
+  testUser: "Admin",
+  action: "Manual Trigger",
+  value: 42,
+  timestamp: new Date().toISOString()
+};
+
+fetch(webAppUrl, {
+  method: "POST",
+  mode: "no-cors", // Essential for Google Apps Script redirects
+  cache: "no-cache",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(payload)
+})
+.then(() => console.log("Request sent! Check your Spreadsheet for a new row."))
+.catch(err => console.error("Fetch error:", err));
+
 // if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
