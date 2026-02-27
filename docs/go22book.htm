@@ -6,19 +6,14 @@
     <title>Haringey Fixers - Confirm Booking</title>
     <style>
         body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f4; }
-        .confirm-box { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        button { background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; margin-top: 20px; }
-        button:disabled { background: #ccc; }
-        #orderDisplay { font-weight: bold; font-size: 24px; color: #333; }
-        .success-checkmark { font-size: 50px;  color: #28a745;   display: none; /* Hidden by default */   margin-top: 20px;  animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@keyframes popIn {
-    0% { transform: scale(0); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
-.hidden { display: none !important; }
+        .confirm-box { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; }
+        button { background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; margin-top: 20px; width: 100%; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        #orderDisplay { font-weight: bold; font-size: 24px; color: #333; margin: 10px 0; }
+        #nameDisplay { color: #666; margin-bottom: 10px; }
+        .success-checkmark { font-size: 50px; color: #28a745; display: none; margin-top: 20px; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        @keyframes popIn { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        .hidden { display: none !important; }
     </style>
 </head>
 <body>
@@ -28,10 +23,8 @@
     <div id="orderDisplay">Loading...</div>
     <div id="nameDisplay">Loading...</div>
     <button id="sendBtn">Send Confirmation</button>
-    
     <div id="checkIcon" class="success-checkmark">✅</div>
-    
-    <div id="statusMsg" style="margin-top:15px;"></div>
+    <div id="statusMsg" style="margin-top:15px; font-size: 14px;"></div>
 </div>
 
 <script type="module">
@@ -39,60 +32,82 @@
     import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
     import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
-    const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
-    
-    let db, auth, isInitialized = false;
+    // 1. UI Setup & URL Parsing
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderID = urlParams.get('oid');
+    const customerName = urlParams.get('name');
 
-    // UI Elements
+    const display = document.getElementById('orderDisplay');
+    const nameID = document.getElementById('nameDisplay');
     const btn = document.getElementById('sendBtn');
     const statusMsg = document.getElementById('statusMsg');
-    const urlParams = new URLSearchParams(window.location.search);
 
-    // 1. START PRE-FETCH IMMEDIATELY
+    if (orderID && customerName) {
+        display.innerText = orderID;
+        nameID.innerText = customerName;
+    } else {
+        display.innerText = "Missing ID";
+        nameID.innerText = "Please check your link";
+        btn.disabled = true;
+    }
+
+    // 2. Background Firebase Initialization
+    const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
+    let db, auth, isInitialized = false;
+
     const firebaseReadyPromise = (async () => {
         try {
             const fullUrl = `${gasUrl}?token=Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL&cnf=fb`;
             const response = await fetch(fullUrl);
             const config = await response.json();
 
-            if (config.error || !config.apiKey) throw new Error("Config Error");
+            if (config.error || !config.apiKey) throw new Error("Config retrieval failed");
 
             const app = initializeApp(config);
             auth = getAuth(app);
             db = getFirestore(app);
             
-            // Go ahead and start the anonymous sign-in in the background too
+            // Restoring Anonymous Auth
             await signInAnonymously(auth);
             
             isInitialized = true;
-            console.log("Firebase background prep complete.");
+            console.log("Firebase initialized successfully");
         } catch (err) {
-            console.error("Initialization failed:", err);
+            console.error("Init Error:", err);
+            // We don't block the UI here, we handle the error on button click
         }
     })();
 
-    // 2. BUTTON CLICK HANDLER
+    // 3. Final Submission Logic
     async function handleSubmission() {
         btn.disabled = true;
-        btn.innerText = "Saving...";
+        btn.innerText = "Processing...";
 
         try {
             await firebaseReadyPromise;
-            if (!isInitialized) throw new Error("Connection failed.");
 
+            if (!isInitialized) throw new Error("Connection failed. Check your internet or Authorized Domains.");
+
+            // Save to Firestore
             await addDoc(collection(db, "bookings"), {
-                name: urlParams.get('name'),
-                orderID: urlParams.get('oid'),
+                name: customerName,
+                orderID: orderID,
                 createdAt: serverTimestamp(),
                 userId: auth.currentUser.uid
             });
 
-            // SUCCESS UI TRANSITION
-            btn.classList.add('hidden'); // Hide the button
-            document.getElementById('checkIcon').style.display = 'block'; // Show checkmark
-            statusMsg.innerHTML = "<strong>Booking Confirmed!</strong><br>You're all set.";
-        
+            // Success UI
+            btn.classList.add('hidden'); 
+            document.getElementById('checkIcon').style.display = 'block'; 
+            statusMsg.innerHTML = "<strong>Confirmed!</strong><br>Redirecting in 5 seconds...";
+
+            // Redirect to Haringey Fixers
+            setTimeout(() => {
+                window.location.href = "https://haringeyfixers.org.uk/"; 
+            }, 5000);
+            
         } catch (err) {
+            console.error("Submission Error:", err);
             statusMsg.innerHTML = "❌ " + err.message;
             btn.disabled = false;
             btn.innerText = "Retry";
@@ -101,5 +116,6 @@
 
     btn.addEventListener('click', handleSubmission);
 </script>
+
 </body>
 </html>
