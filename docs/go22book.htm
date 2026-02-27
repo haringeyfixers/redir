@@ -25,7 +25,8 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
     import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-    const gasUrl = "https://script.google.com/macros/s/AKfycbw9F8uqUsmH60v6giy0P9qmxfesniHLKDQfOuDoA5dMORNZ6iBTiibXykkvWttcrGlF/exec?cnf=fb";
+    const gasUrl = "https://script.google.com/macros/s/AKfycbzMFL4kDay6l4n_zvDDRfMeoEC43RcbVrwKcmv-OF5RZ9VvkPW5avEaHTW_XZ6-aDUe/exec";
+    // https://script.google.com/macros/s/AKfycbzMFL4kDay6l4n_zvDDRfMeoEC43RcbVrwKcmv-OF5RZ9VvkPW5avEaHTW_XZ6-aDUe/exec
 
     const urlParams = new URLSearchParams(window.location.search);
     const orderID = urlParams.get('OrderID');
@@ -48,7 +49,7 @@
 
         try {
 
-            const fullUrl = `${gasUrl}?token=Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL`;
+            const fullUrl = `${gasUrl}?token=Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL&cnf=fb`;
             console.log("Fetching from:", fullUrl); // Debugging line
         
             const response = await fetch(fullUrl);
