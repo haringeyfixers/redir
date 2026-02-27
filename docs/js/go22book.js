@@ -1,4 +1,4 @@
-// https://haringeyfixers.github.io/redir/go22book.htm?b=dir&h=a5&l=loc33&p=mh p=hrc p=crc p=bwf p=ag
+//  p=hrc p=crc p=bwf p=ag
 // https://bit.ly/hf26h https://haringeyfixers.github.io/redir/go22book.htm?h=A5&p=hrc&b=loc22 h=a5, h=a3
 // https://console.firebase.google.com/project/activity-db-8b49f/firestore/databases/-default-/data/~2Fredirect_logs
 let ffCalledBy="go22book.htm", urlParams = {}, parm_b="b", parm_h="h", parm_l="l", parm_p="p"; //CHANGE THIS SWTICH PARAMETER FOR EACH DIFFERENT rd JS FILE
@@ -100,7 +100,10 @@ const payload = {
   testUser: "Admin",
   action: "Manual Trigger",
   value: 42,
-  timestamp: new Date().toISOString()
+  timestamp: new Date().toISOString(),
+  apiKey: "Superqweasd123Secret", // Matches the property we set
+  user: "JS Console",
+  message: "Authenticated Request"
 };
 
 fetch(webAppUrl, {
