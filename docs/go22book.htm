@@ -23,54 +23,54 @@
 </div>
 
 <script type="module">
-    import { initializeApp }                                     from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-    import { getAnalytics }                                      from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-    import { getAuth, signInAnonymously, onAuthStateChanged }    from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
-    import { getFirestore, collection, query, orderBy, getDocs } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
     const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const orderID = urlParams.get('oid');
-    const customerName = urlParams.get('name');
+    
+    // Global variables to be assigned after fetch
+    let db, auth;
 
     // UI Elements
-    const display = document.getElementById('orderDisplay');
-    const nameID = document.getElementById('nameDisplay');
     const btn = document.getElementById('sendBtn');
     const statusMsg = document.getElementById('statusMsg');
-
-    if (orderID) {
-        display.innerText = orderID;
-    } else {
-        display.innerText = "No ID Found";
-        btn.disabled = true;
-    }
-    if (nameID) {
-        nameID.innerText = customerName;
-    } else {
-        display.innerText = "No Name Found";
-        btn.disabled = true;
-    }
 
     async function initAndSend() {
         btn.disabled = true;
         btn.innerText = "Processing...";
 
         try {
-
+            // 1. Fetch Config from GAS
             const fullUrl = `${gasUrl}?token=Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL&cnf=fb`;
-            console.log("Fetching from:", fullUrl); // Debugging line
-        
             const response = await fetch(fullUrl);
-            const data = await response.json();
+            const config = await response.json();
 
-            console.log("Data received from GAS:", data); // This will tell us the error
-
-            if (data.error || !data.apiKey) {
-                throw new Error(data.error || "Invalid Config");
+            if (config.error || !config.apiKey) {
+                throw new Error(config.error || "Failed to retrieve Firebase config");
             }
-        
+
+            // 2. Initialize Firebase dynamically
+            const app = initializeApp(config);
+            auth = getAuth(app);
+            db = getFirestore(app);
+
+            // 3. Sign in Anonymously
+            const userCredential = await signInAnonymously(auth);
+            console.log("Signed in as:", userCredential.user.uid);
+
+            // 4. Save to Firestore
+            const urlParams = new URLSearchParams(window.location.search);
+            await addDoc(collection(db, "bookings"), {
+                name: urlParams.get('name'),
+                orderID: urlParams.get('oid'),
+                createdAt: serverTimestamp(),
+                userId: userCredential.user.uid
+            });
+
+            statusMsg.innerHTML = "✅ Booking Confirmed!";
+            btn.innerText = "Done";
+            
         } catch (err) {
             console.error(err);
             statusMsg.innerHTML = "❌ Error: " + err.message;
@@ -80,78 +80,6 @@
     }
 
     btn.addEventListener('click', initAndSend);
-    // Initialize Firebase and Firestore
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth();
-    const db = getFirestore(app);
-  
-    // Automatically sign them in anonymously when the page loads
-    onAuthStateChanged(auth, (user) => {
-        if (!user) {
-            signInAnonymously(auth)
-            .then(() => {
-                console.log("Signed in anonymously");
-            })
-            .catch((error) => {
-                console.error("Auth error:", error.code, error.message);
-            });
-        } else {
-            console.log("User already signed in with UID:", user.uid);
-        }
-    });
-  
-    // Function to handle the booking submission
-    async function submitBooking(customerName, orderID) {
-        try {
-            // Ensure user is signed in anonymously before writing
-            if (!auth.currentUser) {
-                await signInAnonymously(auth);
-            }
-
-            // Add a new document to the "bookings" collection
-            const docRef = await addDoc(collection(db, "bookings"), {
-                name: customerName,
-                orderID: orderID,
-                createdAt: serverTimestamp(), // Trustworthy server-side time
-                userId: auth.currentUser.uid  // Link the booking to this session
-            });
-
-            console.log("Booking successful! ID:", docRef.id);
-            alert("Booking saved!");
-        } catch (error) {
-                console.error("Error saving booking:", error);
-                alert("Failed to save booking. Check console for details.");
-            }
-        }
-    async function loadAllBookings() {
-        const db = getFirestore();
-        const bookingsRef = collection(db, "bookings");
-  
-        // Sort by the server timestamp we created earlier
-        const q = query(bookingsRef, orderBy("createdAt", "desc"));
-
-        try {
-                const querySnapshot = await getDocs(q);
-                const tableBody = document.getElementById("bookings-table-body");
-                tableBody.innerHTML = ""; // Clear existing rows
-
-                querySnapshot.forEach((doc) => {
-                    const data = doc.data();
-                    const date = data.createdAt ? data.createdAt.toDate().toLocaleString() : "Pending...";
-      
-                    tableBody.innerHTML += `
-                        <tr>
-                            <td>${date}</td>
-                            <td>${data.name}</td>
-                            <td>${doc.id}</td>
-                        </tr>
-                    `;
-                });
-            } catch (error) {
-                console.error("Permission denied or error:", error);
-                alert("You do not have permission to view this data. Check your Admin UID!");
-            }
-}
 </script>
 </body>
 </html>
