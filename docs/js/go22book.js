@@ -12,49 +12,8 @@ let p_Asize    = params.get(parm_h); // size of medium eg A5
 let p_location = params.get(parm_l); // location eg N6 6BJ
 let p_topic    = params.get(parm_p); // info about eg hrc - highgate RC
 
-// --- Individual events ---
-const hfevents = [
-	{ date:'14/02/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1978898111522'},
-	{ date:'14/03/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306559227'},
-	{ date:'11/04/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306563239'},
-	{ date:'09/05/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306566248'},
-	{ date:'20/06/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306568254'},
-	{ date:'11/07/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306576278'},
-	{ date:'12/09/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306580290'},
-	{ date:'10/10/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306581293'},
-	{ date:'14/11/2026',url: 'https://www.eventbrite.co.uk/e/highgate-repair-cafe-registration-1980306583299'},
-];
-
-// --- HELPER TO FIX DATE PARSING ---
-function parseDMY(s) {
-    const [d, m, y] = s.split('/');
-    return new Date(y, m - 1, d); // Months are 0-indexed
-}
-
-// --- CORE FUNCTION ---
-function s22getNearestFutureEvent(eventData, fakeNow = new Date()) {
-  return eventData.reduce((nearest, current) => {
-    const currentDate = parseDMY(current.date);
-
-    if (currentDate > fakeNow) {
-      if (!nearest || currentDate < parseDMY(nearest.date)) { 
-        return current;
-      }
-    }
-    return nearest;
-  }, null);
-}
-
-/**
- * Gets the next event and returns only the URL string.
- */
-function getNextEventURL(eventData) {
-    const nextEvent = s22getNearestFutureEvent(eventData);
-    return nextEvent ? nextEvent.url : null;
-}
-
 // --- ASSIGNMENT & LOGGING ---
-// ffTarget_URL = getNextEventURL(hfevents);
+// ffTarget_URL = 
 // if (ffTarget_URL==null) {ffTarget_URL='https://www.eventbrite.co.uk/cc/haringey-repair-cafes-461019'}
 // console.log("The forward URL is: " + ffTarget_URL);
 
@@ -94,28 +53,4 @@ async function redirectWithBackgroundUpdate(targetUrl, valueX) {
 // Usage:
 const ffOut="Called  by_"+ffCalledBy+", Asize_"+p_Asize+ ", From_"+p_location+", About_"+p_topic+", Bitly_"+p_bitly+", Agent_"+userAgent;
 redirectWithBackgroundUpdate(ffTarget_URL,ffOut);
-const webAppUrl = "https://script.google.com/macros/s/AKfycbz2eHTUEAv19CEfyckLvnbhWPW6SgxO8tRVZLJs2DlOQLmY305LAb2zMBxFn04pIc2I/exec"; // Replace this
 
-const payload = {
-  testUser: "Admin",
-  action: "Manual Trigger",
-  value: 42,
-  timestamp: new Date().toISOString(),
-  toKhf: "Superqweasd123Secret", // Matches the property we set
-  user: "JS Console",
-  message: "Authenticated Request"
-};
-
-fetch(webAppUrl, {
-  method: "POST",
-  mode: "no-cors", // Essential for Google Apps Script redirects
-  cache: "no-cache",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(payload)
-})
-.then(() => console.log("Request sent! Check your Spreadsheet for a new row."))
-.catch(err => console.error("Fetch error:", err));
-
-// if (sw_targ==true) {window.location.href=ffTarget_URL;} else {document.write('There may have been an error - no action possible:'+ffTarget_URL);}
