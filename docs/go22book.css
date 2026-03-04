@@ -1,0 +1,113 @@
+  :root {
+    --primary-color: #2e7d32; 
+    --primary-hover: #1b5e20;
+    --text-main: #202124;
+    --text-secondary: #5f6368;
+    --bg-color: #f0f2f5;
+    /* Material Elevation Shadows */
+    --shadow-depth: 0 8px 16px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+    --shadow-pressed: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  body { 
+    font-family: 'Roboto', sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background: var(--bg-color); 
+  }
+
+  /* 3D Material Card */
+  .confirm-box { 
+    background: white; 
+    padding: 40px 30px; 
+    border-radius: 16px; 
+    text-align: center; 
+    box-shadow: var(--shadow-depth);
+    width: 320px; 
+    transition: transform 0.2s ease-out;
+  }
+
+  .logo { 
+    width: 70px; 
+    height: auto; 
+    margin-bottom: 24px; 
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.1));
+  }
+
+  .label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    letter-spacing: 0.25px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  #nameDisplay { 
+    font-size: 24px; 
+    font-weight: 700; 
+    color: var(--text-main); 
+    margin-bottom: 4px; 
+  }
+
+  #activityTimeDisplay { 
+    font-size: 16px; 
+    color: var(--text-secondary); 
+    margin-bottom: 28px; 
+  }
+
+  /* Tactile Button Design */
+  button { 
+    background: var(--primary-color); 
+    color: white; 
+    border: none; 
+    padding: 14px 24px; 
+    font-size: 14px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    border-radius: 12px; 
+    cursor: pointer; 
+    width: 100%; 
+    box-shadow: 0 4px 0px #1b5e20; /* 3D Edge */
+    transition: all 0.1s ease;
+    outline: none;
+    position: relative;
+    top: 0;
+  }
+
+  button:hover {
+    background: var(--primary-hover);
+    top: -1px;
+    box-shadow: 0 5px 0px #144016;
+  }
+
+  button:active {
+    top: 3px; /* "Click" movement */
+    box-shadow: 0 1px 0px #144016;
+  }
+
+  button:disabled { 
+    background: #e0e0e0; 
+    color: #9e9e9e;
+    cursor: not-allowed; 
+    box-shadow: none;
+    top: 0;
+  }
+
+  .success-checkmark { 
+    font-size: 64px; 
+    margin-top: 20px; 
+    display: none; 
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
+  }
+
+  @keyframes popIn { 
+    0% { transform: scale(0.5); opacity: 0; } 
+    100% { transform: scale(1); opacity: 1; } 
+  }
+
+  .hidden { display: none !important; }

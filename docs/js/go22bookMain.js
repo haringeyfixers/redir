@@ -68,9 +68,9 @@ const firebaseReadyPromise = (async () => {
         await signInAnonymously(auth); 
     
         isInitialized = true;
-        console.log("Firebase initialized and User signed in");
+        console.log("szMsg: L71 Firebase initialised and User signed in");
     } catch (err) {
-        console.error("Init Error:", err);
+        console.error("szMsg:L73 Init Error:", err);
     }
 })();
 
@@ -109,7 +109,7 @@ async function handleSubmission() {
         statusMsg.innerHTML = "<strong>Updated - you can close this now</strong>";
                 
     } catch (err) {
-        console.error("Submission Error:", err);
+        console.error("szMsg: L112 Submission Error:", err);
         statusMsg.innerHTML = "❌ " + err.message;
         btn.disabled = false;
         btn.innerText = "Retry";
