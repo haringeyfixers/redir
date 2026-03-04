@@ -7,10 +7,14 @@
     <style>
         body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f4; }
         .confirm-box { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; }
+        
+        /* Style for the logo */
+        .logo { width: 80px; height: auto; margin-bottom: 20px; }
+
         button { background: #28a745; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; margin-top: 20px; width: 100%; }
         button:disabled { background: #ccc; cursor: not-allowed; }
-        #orderDisplay { font-weight: bold; font-size: 24px; color: #333; margin: 10px 0; }
-        #nameDisplay { color: #666; margin-bottom: 10px; }
+        #activityTimeDisplay { font-size: 18px; color: #333; margin: 10px 0; }
+        #nameDisplay { font-size: 24px; font-weight: bold; color: #666; margin-bottom: 10px; }
         .success-checkmark { font-size: 50px; color: #28a745; display: none; margin-top: 20px; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes popIn { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
         .hidden { display: none !important; }
@@ -19,103 +23,20 @@
 <body>
 
 <div class="confirm-box">
-    <div>Confirming Booking for Order:</div>
-    <div id="orderDisplay">Loading...</div>
+    <img src="favicon.svg" alt="Haringey Fixers Logo" class="logo">
+    
+    <div>Confirming activity time for:</div><br>
     <div id="nameDisplay">Loading...</div>
+    <div id="activityTimeDisplay">Loading...</div>
     <button id="sendBtn">Send Confirmation</button>
     <div id="checkIcon" class="success-checkmark">✅</div>
     <div id="statusMsg" style="margin-top:15px; font-size: 14px;"></div>
 </div>
-
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-    import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
-    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
-
-    // 1. UI Setup & URL Parsing
-    const urlParams = new URLSearchParams(window.location.search);
-    const orderID = urlParams.get('oid');
-    const customerName = urlParams.get('name');
-
-    const display = document.getElementById('orderDisplay');
-    const nameID = document.getElementById('nameDisplay');
-    const btn = document.getElementById('sendBtn');
-    const statusMsg = document.getElementById('statusMsg');
-
-    if (orderID && customerName) {
-        display.innerText = orderID;
-        nameID.innerText = customerName;
-    } else {
-        display.innerText = "Missing ID";
-        nameID.innerText = "Please check your link";
-        btn.disabled = true;
-    }
-
-    // 2. Background Firebase Initialization
-    const gasUrl = "https://script.google.com/macros/s/AKfycbybPAI2NC5eKTEuCHbFaa9Y7AHR4XQ24oeFBiIYt6j-pIKaA2I6KMTYYyfvFdC34532/exec";
-    let db, auth, isInitialized = false;
-
-    const firebaseReadyPromise = (async () => {
-        try {
-            const fullUrl = `${gasUrl}?token=Qgtw9dkO2ABQup1oFfrklVW_blMLwRbJ26DL&cnf=fb`;
-            const response = await fetch(fullUrl);
-            const config = await response.json();
-
-            if (config.error || !config.apiKey) throw new Error("Config retrieval failed");
-
-            const app = initializeApp(config);
-            auth = getAuth(app);
-            db = getFirestore(app);
-            
-            // Restoring Anonymous Auth
-            await signInAnonymously(auth);
-            
-            isInitialized = true;
-            console.log("Firebase initialized successfully");
-        } catch (err) {
-            console.error("Init Error:", err);
-            // We don't block the UI here, we handle the error on button click
-        }
-    })();
-
-    // 3. Final Submission Logic
-    async function handleSubmission() {
-        btn.disabled = true;
-        btn.innerText = "Processing...";
-
-        try {
-            await firebaseReadyPromise;
-
-            if (!isInitialized) throw new Error("Connection failed. Check your internet or Authorized Domains.");
-
-            // Save to Firestore
-            await addDoc(collection(db, "bookings"), {
-                name: customerName,
-                orderID: orderID,
-                createdAt: serverTimestamp(),
-                userId: auth.currentUser.uid
-            });
-
-            // Success UI
-            btn.classList.add('hidden'); 
-            document.getElementById('checkIcon').style.display = 'block'; 
-            statusMsg.innerHTML = "<strong>Confirmed!</strong><br>Redirecting in 5 seconds...";
-
-            // Redirect to Haringey Fixers
-            setTimeout(() => {
-                window.location.href = "https://haringeyfixers.org"; 
-            }, 5000);
-            
-        } catch (err) {
-            console.error("Submission Error:", err);
-            statusMsg.innerHTML = "❌ " + err.message;
-            btn.disabled = false;
-            btn.innerText = "Retry";
-        }
-    }
-
-    btn.addEventListener('click', handleSubmission);
+<script type="module" src="js/go22bookMain.js"></script>
+<script> 
+                 // Redirect to Haringey Fixers
+                // statusMsg.innerHTML = "<strong>Confirmed!</strong>"; // <br>Redirecting in 5 seconds...";
+                // setTimeout(() => { window.location.href = "https://haringeyfixers.org";  }, 5000);
 </script>
-
 </body>
 </html>
