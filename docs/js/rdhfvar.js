@@ -46,6 +46,9 @@ switch(qs) {//  https://bit.ly/hfgen24 MAYBE 401jwAp        https://bit.ly/hfgen
     case 'hf28'	: ff_targ_text='Jewellery Workshop, register interest', ff_targ="https://docs.google.com/forms/d/e/1FAIpQLSez_GqDpkkY8WUeB9z5lgyOc750dSXV_hzZM-zysUwilAfeTQ/viewform?usp=header"; break; 
     //  https://bit.ly/jwregint https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf28 
 
+    case 'hf29'	: ff_targ_text='Workshop Jobsheet', ff_targ="https://docs.google.com/spreadsheets/d/1whA-DkQDvgbeMvCyZA-pkejen6wbN_TpZ_8EKsRDOGQ/edit?gid=1162216020#gid=1162216020"; break; 
+    //  https://haringeyfixers.github.io/redir/rdhfvar.htm?r=hfgen&v=hf29 
+
                   default:console.log("L49 hfgen not found"); sznogo=true;break;} 
   break; 
   case 'rcag'	: if (sznogo==true) {console.log("46 rcag nogo test");}// default sznogo=true; ALL GOOD
